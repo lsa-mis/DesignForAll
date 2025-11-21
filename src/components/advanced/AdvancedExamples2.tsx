@@ -394,16 +394,17 @@ export function ProChatWidget() {
   
   return (
     <div className="relative inline-block min-h-[400px] py-8">
-      <button 
-        onClick={() => setOpen(!open)}
-        aria-label="Open chat"
-        aria-expanded={open}
-        className="w-16 h-16 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-2xl flex items-center justify-center"
-      >
-        💬
-      </button>
-      {open && (
-        <div className="absolute bottom-full right-0 mb-2 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-64 sm:h-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col z-10">
+      <div className="relative inline-block">
+        <button 
+          onClick={() => setOpen(!open)}
+          aria-label="Open chat"
+          aria-expanded={open}
+          className="w-16 h-16 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-2xl flex items-center justify-center"
+        >
+          💬
+        </button>
+        {open && (
+          <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-64 sm:h-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col z-10">
           <div className="p-3 sm:p-4 border-b border-slate-300 dark:border-slate-700">
             <div className="flex items-center justify-between">
               <h2 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-slate-100">Chat Support</h2>
@@ -442,7 +443,8 @@ export function ProChatWidget() {
             </div>
           </div>
         </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
