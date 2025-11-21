@@ -198,23 +198,27 @@ export function ProTabs() {
 // Carousel - Bad
 export function AmateurCarousel() {
   const [index, setIndex] = useState(0);
-  const items = ['Slide 1', 'Slide 2', 'Slide 3'];
+  const items = [
+    { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop', alt: '' },
+    { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=400&fit=crop', alt: '' },
+    { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=400&fit=crop', alt: '' },
+  ];
   
   return (
     <div className="relative">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-lg">
         <div className="flex transition-transform" style={{ transform: `translateX(-${index * 100}%)` }}>
           {items.map((item, i) => (
-            <div key={i} className="w-full flex-shrink-0 p-8 bg-slate-200 dark:bg-slate-800 text-center">
-              {item}
+            <div key={i} className="w-full flex-shrink-0 aspect-video">
+              <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
             </div>
           ))}
         </div>
       </div>
-      <button onClick={() => setIndex((index - 1 + items.length) % items.length)} className="absolute left-0 top-1/2">
+      <button onClick={() => setIndex((index - 1 + items.length) % items.length)} className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-slate-800/80 hover:bg-white dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
         ←
       </button>
-      <button onClick={() => setIndex((index + 1) % items.length)} className="absolute right-0 top-1/2">
+      <button onClick={() => setIndex((index + 1) % items.length)} className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 dark:bg-slate-800/80 hover:bg-white dark:hover:bg-slate-800 text-slate-900 dark:text-slate-100 rounded-full w-10 h-10 flex items-center justify-center shadow-lg">
         →
       </button>
     </div>
@@ -225,11 +229,15 @@ export function AmateurCarousel() {
 export function ProCarousel() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
-  const items = ['Slide 1', 'Slide 2', 'Slide 3'];
+  const items = [
+    { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop', alt: 'Mountain landscape with lake reflection at sunset' },
+    { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&h=400&fit=crop', alt: 'Ocean waves crashing on rocky shore' },
+    { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=400&fit=crop', alt: 'Forest path with sunlight filtering through trees' },
+  ];
   
   return (
     <div className="relative" aria-label="Image carousel">
-      <div className="overflow-hidden">
+      <div className="overflow-hidden rounded-lg">
         <div 
           className="flex transition-transform"
           style={{ transform: `translateX(-${index * 100}%)` }}
@@ -238,12 +246,16 @@ export function ProCarousel() {
           {items.map((item, i) => (
             <div 
               key={i} 
-              className="w-full flex-shrink-0 p-8 bg-slate-200 dark:bg-slate-800 text-center"
+              className="w-full flex-shrink-0 aspect-video"
               role="group"
               aria-roledescription="slide"
-              aria-label={`Slide ${i + 1} of ${items.length}`}
+              aria-label={`Slide ${i + 1} of ${items.length}: ${item.alt}`}
             >
-              {item}
+              <img 
+                src={item.src} 
+                alt={item.alt}
+                className="w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>

@@ -403,39 +403,46 @@ export function ProChatWidget() {
         💬
       </button>
       {open && (
-        <div className="absolute bottom-full right-0 mb-2 w-80 h-64 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col">
-          <div className="p-4 border-b border-slate-300 dark:border-slate-700">
+        <div className="absolute bottom-full right-0 mb-2 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-64 sm:h-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col">
+          <div className="p-3 sm:p-4 border-b border-slate-300 dark:border-slate-700">
             <div className="flex items-center justify-between">
-              <h2 className="font-semibold text-slate-900 dark:text-slate-100">Chat Support</h2>
+              <h2 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-slate-100">Chat Support</h2>
               <button
                 onClick={() => setOpen(false)}
                 aria-label="Close chat"
-                className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded"
+                className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded p-1"
               >
-                ×
+                <span className="text-xl">×</span>
               </button>
             </div>
           </div>
-          <div className="flex-1 p-4 overflow-y-auto">
-            <p className="text-sm text-slate-600 dark:text-slate-400">Chat messages...</p>
+          <div className="flex-1 p-3 sm:p-4 overflow-y-auto">
+            <div className="space-y-2">
+              <div className="bg-slate-100 dark:bg-slate-800 rounded-lg p-2 sm:p-3">
+                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300">Hello! How can I help you today?</p>
+              </div>
+              <div className="bg-indigo-100 dark:bg-indigo-900/30 rounded-lg p-2 sm:p-3 ml-auto max-w-[80%]">
+                <p className="text-xs sm:text-sm text-slate-700 dark:text-slate-300">I have a question about my order.</p>
+              </div>
+            </div>
           </div>
-          <div className="p-4 border-t border-slate-300 dark:border-slate-700">
-            <input
-              type="text"
-              placeholder="Type a message..."
-              className="w-full px-3 py-2 border border-slate-300 dark:border-slate-700 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-            />
+          <div className="p-3 sm:p-4 border-t border-slate-300 dark:border-slate-700">
+            <div className="flex gap-2">
+              <input
+                type="text"
+                placeholder="Type a message..."
+                className="flex-1 px-3 py-2 text-sm sm:text-base border border-slate-300 dark:border-slate-700 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+              />
+              <button
+                aria-label="Send message"
+                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-sm sm:text-base"
+              >
+                Send
+              </button>
+            </div>
           </div>
         </div>
       )}
-      <button
-        onClick={() => setOpen(!open)}
-        aria-label={open ? 'Close chat' : 'Open chat'}
-        aria-expanded={open}
-        className="w-12 h-12 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-      >
-        💬
-      </button>
     </div>
   );
 }
