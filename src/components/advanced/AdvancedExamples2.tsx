@@ -379,10 +379,11 @@ export function ProMediaPlayer() {
 // Chat Widget - Bad
 export function AmateurChatWidget() {
   return (
-    <div className="fixed bottom-4 right-4">
-      <button className="w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg">
+    <div className="relative inline-block">
+      <button className="w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg">
         💬
       </button>
+      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - no context</p>
     </div>
   );
 }
@@ -392,9 +393,17 @@ export function ProChatWidget() {
   const [open, setOpen] = useState(false);
   
   return (
-    <div className="fixed bottom-4 right-4 z-50">
+    <div className="relative inline-block">
+      <button 
+        onClick={() => setOpen(!open)}
+        aria-label="Open chat"
+        aria-expanded={open}
+        className="w-12 h-12 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      >
+        💬
+      </button>
       {open && (
-        <div className="absolute bottom-16 right-0 w-80 h-96 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col">
+        <div className="absolute bottom-full right-0 mb-2 w-80 h-64 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col">
           <div className="p-4 border-b border-slate-300 dark:border-slate-700">
             <div className="flex items-center justify-between">
               <h2 className="font-semibold text-slate-900 dark:text-slate-100">Chat Support</h2>

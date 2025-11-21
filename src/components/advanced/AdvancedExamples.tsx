@@ -50,19 +50,22 @@ export function ProAccordion() {
 export function AmateurModal() {
   const [open, setOpen] = useState(false);
   return (
-    <div>
-      <button onClick={() => setOpen(true)} className="px-4 py-2 bg-blue-500 text-white rounded">
+    <div className="relative">
+      <button onClick={() => setOpen(true)} className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
         Open Modal
       </button>
       {open && (
-        <div className="fixed inset-0 bg-black bg-opacity-50">
-          <div className="bg-white p-6 rounded max-w-md mx-auto mt-20">
-            <h2>Modal Title</h2>
-            <p>Modal content</p>
-            <button onClick={() => setOpen(false)}>Close</button>
+        <div className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center rounded">
+          <div className="bg-white dark:bg-slate-800 p-6 rounded max-w-md mx-4 shadow-xl relative z-20">
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Modal Title</h2>
+            <p className="text-slate-700 dark:text-slate-300 mb-4">Modal content</p>
+            <button onClick={() => setOpen(false)} className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded">
+              Close
+            </button>
           </div>
         </div>
       )}
+      {open && <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - appears outside component context</p>}
     </div>
   );
 }
@@ -79,42 +82,46 @@ export function ProModal() {
     }
   }, [open]);
 
-  if (!open) return (
-    <button 
-      onClick={() => setOpen(true)}
-      className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-    >
-      Open Modal
-    </button>
-  );
-
   return (
-    <div 
-      className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center"
-      onClick={() => setOpen(false)}
-    >
-      <div 
-        ref={modalRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-title"
-        className="bg-white dark:bg-slate-900 p-6 rounded-lg max-w-md w-full mx-4 shadow-xl"
-        onClick={(e) => e.stopPropagation()}
-        onKeyDown={(e) => {
-          if (e.key === 'Escape') setOpen(false);
-        }}
+    <div className="relative min-h-[200px]">
+      <button 
+        onClick={() => setOpen(true)}
+        className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
       >
-        <h2 id="modal-title" className="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">
-          Modal Title
-        </h2>
-        <p className="mb-4 text-slate-700 dark:text-slate-300">Modal content</p>
-        <button 
-          onClick={() => setOpen(false)}
-          className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
-        >
-          Close
-        </button>
-      </div>
+        Open Modal
+      </button>
+      {open && (
+        <>
+          <div 
+            className="absolute inset-0 bg-black bg-opacity-50 z-10 flex items-center justify-center rounded"
+            onClick={() => setOpen(false)}
+          >
+            <div 
+              ref={modalRef}
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="modal-title"
+              className="bg-white dark:bg-slate-900 p-6 rounded-lg max-w-md w-full mx-4 shadow-xl relative z-20"
+              onClick={(e) => e.stopPropagation()}
+              onKeyDown={(e) => {
+                if (e.key === 'Escape') setOpen(false);
+              }}
+            >
+              <h2 id="modal-title" className="text-xl font-bold mb-4 text-slate-900 dark:text-slate-100">
+                Modal Title
+              </h2>
+              <p className="mb-4 text-slate-700 dark:text-slate-300">Modal content</p>
+              <button 
+                onClick={() => setOpen(false)}
+                className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+          <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">✓ Proper focus management, ARIA roles, keyboard accessible</p>
+        </>
+      )}
     </div>
   );
 }
@@ -645,8 +652,11 @@ export function ProProgress() {
 // Toast Notification - Bad
 export function AmateurToast() {
   return (
-    <div className="fixed bottom-4 right-4 bg-blue-500 text-white p-4 rounded shadow-lg">
-      <p>Notification message</p>
+    <div className="relative">
+      <div className="bg-blue-500 text-white p-4 rounded shadow-lg max-w-sm">
+        <p>Notification message</p>
+      </div>
+      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - appears outside component context</p>
     </div>
   );
 }
@@ -654,21 +664,24 @@ export function AmateurToast() {
 // Toast Notification - Good
 export function ProToast() {
   return (
-    <div
-      role="alert"
-      aria-live="polite"
-      className="fixed bottom-4 right-4 bg-indigo-600 text-white p-4 rounded-lg shadow-xl max-w-sm z-50"
-    >
-      <div className="flex items-start gap-3">
-        <span aria-hidden="true">✓</span>
-        <p className="flex-1">Notification message</p>
-        <button
-          aria-label="Close notification"
-          className="text-white hover:text-indigo-200 focus:outline-none focus:ring-2 focus:ring-white rounded"
-        >
-          ×
-        </button>
+    <div className="relative">
+      <div
+        role="alert"
+        aria-live="polite"
+        className="bg-indigo-600 text-white p-4 rounded-lg shadow-xl max-w-sm"
+      >
+        <div className="flex items-start gap-3">
+          <span aria-hidden="true">✓</span>
+          <p className="flex-1">Notification message</p>
+          <button
+            aria-label="Close notification"
+            className="text-white hover:text-indigo-200 focus:outline-none focus:ring-2 focus:ring-white rounded"
+          >
+            ×
+          </button>
+        </div>
       </div>
+      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">✓ Proper ARIA roles, dismissible, accessible</p>
     </div>
   );
 }
