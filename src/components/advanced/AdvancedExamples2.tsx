@@ -404,7 +404,7 @@ export function ProChatWidget() {
           💬
         </button>
         {open && (
-          <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-64 sm:h-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col z-10">
+          <div className="absolute bottom-full right-0 mb-2 w-[calc(100vw-2rem)] sm:w-80 max-w-sm h-64 sm:h-80 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-lg shadow-xl flex flex-col z-10">
           <div className="p-3 sm:p-4 border-b border-slate-300 dark:border-slate-700">
             <div className="flex items-center justify-between">
               <h2 className="font-semibold text-sm sm:text-base text-slate-900 dark:text-slate-100">Chat Support</h2>
