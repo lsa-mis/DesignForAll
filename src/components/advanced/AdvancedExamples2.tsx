@@ -380,7 +380,7 @@ export function ProMediaPlayer() {
 export function AmateurChatWidget() {
   return (
     <div className="relative inline-block">
-      <button className="w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg">
+      <button className="w-16 h-16 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg text-2xl flex items-center justify-center">
         💬
       </button>
       <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - no context</p>
@@ -398,7 +398,7 @@ export function ProChatWidget() {
         onClick={() => setOpen(!open)}
         aria-label="Open chat"
         aria-expanded={open}
-        className="w-12 h-12 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        className="w-16 h-16 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-2xl flex items-center justify-center"
       >
         💬
       </button>

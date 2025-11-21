@@ -688,7 +688,11 @@ export function ProToast() {
 
 // Image Gallery - Bad
 export function AmateurGallery() {
-  const images = ['Image 1', 'Image 2', 'Image 3'];
+  const images = [
+    { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop', alt: '' },
+    { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop', alt: '' },
+    { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop', alt: '' },
+  ];
   const [selected, setSelected] = useState(0);
   
   return (
@@ -698,14 +702,14 @@ export function AmateurGallery() {
           <div
             key={i}
             onClick={() => setSelected(i)}
-            className="p-4 bg-slate-200 dark:bg-slate-800 rounded cursor-pointer"
+            className="aspect-video rounded cursor-pointer overflow-hidden border-2 border-slate-300 dark:border-slate-700"
           >
-            {img}
+            <img src={img.src} alt={img.alt} className="w-full h-full object-cover" />
           </div>
         ))}
       </div>
-      <div className="mt-4 p-8 bg-slate-100 dark:bg-slate-900 rounded text-center">
-        {images[selected]}
+      <div className="mt-4 aspect-video bg-slate-100 dark:bg-slate-900 rounded overflow-hidden">
+        <img src={images[selected].src} alt={images[selected].alt} className="w-full h-full object-cover" />
       </div>
     </div>
   );
@@ -714,9 +718,9 @@ export function AmateurGallery() {
 // Image Gallery - Good
 export function ProGallery() {
   const images = [
-    { src: 'Image 1', alt: 'Description of image 1' },
-    { src: 'Image 2', alt: 'Description of image 2' },
-    { src: 'Image 3', alt: 'Description of image 3' },
+    { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop', alt: 'Mountain landscape with lake reflection at sunset' },
+    { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop', alt: 'Ocean waves crashing on rocky shore' },
+    { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&h=300&fit=crop', alt: 'Forest path with sunlight filtering through trees' },
   ];
   const [selected, setSelected] = useState(0);
   
@@ -726,13 +730,21 @@ export function ProGallery() {
         {images.map((img, i) => (
           <button
             key={i}
+            id={`gallery-tab-${i}`}
             role="tab"
             aria-selected={selected === i}
             aria-controls={`gallery-image-${i}`}
             onClick={() => setSelected(i)}
-            className="p-4 bg-slate-200 dark:bg-slate-800 rounded hover:bg-slate-300 dark:hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            onKeyDown={(e) => {
+              if (e.key === 'ArrowRight' && i < images.length - 1) {
+                setSelected(i + 1);
+              } else if (e.key === 'ArrowLeft' && i > 0) {
+                setSelected(i - 1);
+              }
+            }}
+            className="aspect-video rounded overflow-hidden border-2 hover:border-indigo-500 dark:hover:border-indigo-400 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-colors"
           >
-            {img.src}
+            <img src={img.src} alt={`Thumbnail: ${img.alt}`} className="w-full h-full object-cover" />
           </button>
         ))}
       </div>
@@ -740,17 +752,17 @@ export function ProGallery() {
         id={`gallery-image-${selected}`}
         role="tabpanel"
         aria-labelledby={`gallery-tab-${selected}`}
-        className="mt-4 p-8 bg-slate-100 dark:bg-slate-900 rounded text-center"
+        className="mt-4 aspect-video bg-slate-100 dark:bg-slate-900 rounded overflow-hidden"
       >
         <img 
           src={images[selected].src} 
           alt={images[selected].alt}
-          className="mx-auto"
+          className="w-full h-full object-cover"
         />
-        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
-          {images[selected].alt}
-        </p>
       </div>
+      <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 text-center">
+        {images[selected].alt}
+      </p>
     </div>
   );
 }
