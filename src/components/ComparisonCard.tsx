@@ -129,7 +129,11 @@ export default function ComparisonCard({
       </div>
 
       {/* Component Preview */}
-      <div className="relative min-h-[300px] p-8 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+      <div className={`relative p-8 bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800 ${
+        title.toLowerCase().includes('chat') || title.toLowerCase().includes('floating') 
+          ? 'min-h-[500px]' 
+          : 'min-h-[300px]'
+      }`}>
         <AnimatePresence mode="wait">
           <motion.div
             key={isProMode ? 'pro' : 'amateur'}
