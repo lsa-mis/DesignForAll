@@ -38,9 +38,11 @@ The GitHub Actions workflow will automatically run when you push to `main`. To t
 
 ## Step 5: Access Your Site
 
-Once deployment completes (usually 2-3 minutes), your site will be available at:
+Once deployment completes (usually 2-5 minutes), your site will be available at:
 
 **https://lsa-mis.github.io/DesignForAll/designforall/**
+
+**Note:** During deployment, GitHub may show a temporary preview URL (like `special-engine-*.pages.github.io`). This is normal. The final URL will be available in your repository's **Settings → Pages** once deployment completes. You can also find the final URL in the Actions workflow output under the deployment step.
 
 ## Troubleshooting
 
