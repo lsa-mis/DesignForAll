@@ -98,16 +98,16 @@ export default function Home() {
         className="bg-indigo-600 rounded-xl p-8 text-white"
       >
         <h2 className="text-2xl font-bold mb-4">Ready to Start?</h2>
-        <h3 className="text-xl font-bold mb-3">Anatomy of an Unbreakable Component</h3>
+        <h3 className="text-xl font-bold mb-3">Modal Dialogs: Focus Management Mastery</h3>
         <p className="text-indigo-100 mb-6">
-          Move beyond basic styling. Learn how to architect components that manage their own focus states, 
-          announce changes to the DOM, and handle edge cases without breaking the layout.
+          See how proper focus trapping, backdrop handling, and keyboard navigation transform a basic modal 
+          into an accessible, professional component. Compare Beginner vs Expert implementations side-by-side.
         </p>
         <Link
-          to="/section/advanced"
+          to="/section/advanced#8.3"
           className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-indigo-950 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-indigo-600"
         >
-          Deconstruct Components
+          Explore Modal Dialogs
           <ArrowRight className="w-5 h-5" />
         </Link>
       </motion.div>
