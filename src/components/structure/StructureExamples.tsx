@@ -18,7 +18,7 @@ export function ExpertHeadings1() {
       <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Page Title</h1>
       <h2 className="text-2xl font-semibold text-slate-800 dark:text-slate-200">Section</h2>
       <h3 className="text-xl font-medium text-slate-700 dark:text-slate-300">Subsection</h3>
-      <p className="text-base text-slate-600 dark:text-slate-400">Content here...</p>
+      <p className="text-base text-slate-700 dark:text-slate-300">Content here...</p>
     </div>
   );
 }

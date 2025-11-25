@@ -65,7 +65,7 @@ export function BeginnerModal() {
           </div>
         </div>
       )}
-      {open && <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - appears outside component context</p>}
+      {open && <p className="text-xs mt-2 text-slate-700 dark:text-slate-300">Fixed positioning - appears outside component context</p>}
     </div>
   );
 }
@@ -119,7 +119,7 @@ export function ExpertModal() {
               </button>
             </div>
           </div>
-          <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">✓ Proper focus management, ARIA roles, keyboard accessible</p>
+          <p className="text-xs mt-2 text-slate-700 dark:text-slate-300">✓ Proper focus management, ARIA roles, keyboard accessible</p>
         </>
       )}
     </div>
@@ -176,7 +176,7 @@ export function ExpertTabs() {
             className={`px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
               active === index 
                 ? 'border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold' 
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100'
+                : 'text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-slate-100'
             }`}
           >
             {tab}
@@ -654,7 +654,7 @@ export function ExpertProgress() {
           style={{ width: `${progress}%` }}
         />
       </div>
-      <p className="text-sm text-slate-600 dark:text-slate-400 mt-1 sr-only">
+      <p className="text-sm text-slate-700 dark:text-slate-300 mt-1 sr-only">
         {progress}% complete
       </p>
     </div>
@@ -668,7 +668,7 @@ export function BeginnerToast() {
       <div className="bg-blue-500 text-white p-4 rounded shadow-lg max-w-sm">
         <p>Notification message</p>
       </div>
-      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - appears outside component context</p>
+      <p className="text-xs mt-2 text-slate-700 dark:text-slate-300">Fixed positioning - appears outside component context</p>
     </div>
   );
 }
@@ -693,7 +693,7 @@ export function ExpertToast() {
           </button>
         </div>
       </div>
-      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">✓ Proper ARIA roles, dismissible, accessible</p>
+      <p className="text-xs mt-2 text-slate-700 dark:text-slate-300">✓ Proper ARIA roles, dismissible, accessible</p>
     </div>
   );
 }
@@ -772,7 +772,7 @@ export function ExpertGallery() {
           className="w-full h-full object-cover"
         />
       </div>
-      <p className="mt-2 text-sm text-slate-600 dark:text-slate-400 text-center">
+      <p className="mt-2 text-sm text-slate-700 dark:text-slate-300 text-center">
         {images[selected].alt}
       </p>
     </div>

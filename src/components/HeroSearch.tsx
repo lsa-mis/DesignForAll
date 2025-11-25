@@ -224,7 +224,7 @@ export default function HeroSearch() {
   return (
     <div ref={containerRef} className="relative w-full max-w-2xl mx-auto">
       <div className="relative">
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 dark:text-slate-400 pointer-events-none z-10">
+        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 dark:text-slate-300 pointer-events-none z-10">
           <Search className="w-5 h-5" aria-hidden="true" />
         </div>
         <input
@@ -239,7 +239,7 @@ export default function HeroSearch() {
             }
           }}
           placeholder="Search accessible components and patterns..."
-          className="w-full h-14 pl-12 pr-4 bg-white/90 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-purple-600 transition-all text-base shadow-sm dark:shadow-none"
+          className="w-full h-14 pl-12 pr-4 bg-white/90 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-600 dark:placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-purple-600 transition-all text-base shadow-sm dark:shadow-none"
           aria-label="Search accessible components and patterns"
           aria-expanded={isOpen}
           aria-autocomplete="list"
@@ -264,7 +264,7 @@ export default function HeroSearch() {
           >
             {filteredResults.length === 0 ? (
               <div className="px-4 py-8 text-left">
-                <p className="text-slate-500 dark:text-slate-400">
+                <p className="text-slate-600 dark:text-slate-300">
                   No matching components or patterns found
                 </p>
               </div>
@@ -272,7 +272,7 @@ export default function HeroSearch() {
               <ul ref={listRef} className="max-h-96 overflow-y-auto">
                 {chapters.length > 0 && (
                   <li className="px-4 py-2 bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-700 text-left">
-                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 uppercase tracking-wider">
                       Sections
                     </span>
                   </li>
@@ -301,12 +301,12 @@ export default function HeroSearch() {
                             <div className="text-slate-900 dark:text-white font-medium mb-1 text-left">
                               {highlightText(result.title, query)}
                             </div>
-                            <div className="text-sm text-slate-600 dark:text-slate-400 text-left">
+                            <div className="text-sm text-slate-700 dark:text-slate-300 text-left">
                               {highlightText(result.description, query)}
                             </div>
                           </div>
                           <ArrowRight 
-                            className={`w-5 h-5 flex-shrink-0 text-slate-400 dark:text-slate-500 transition-opacity ${
+                            className={`w-5 h-5 flex-shrink-0 text-slate-500 dark:text-slate-400 transition-opacity ${
                               isFocused ? 'opacity-100' : 'opacity-0'
                             }`}
                             aria-hidden="true"
@@ -319,7 +319,7 @@ export default function HeroSearch() {
                 
                 {subsections.length > 0 && (
                   <li className="px-4 py-2 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-700 border-b border-slate-200 dark:border-slate-700 text-left">
-                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 uppercase tracking-wider">
                       Components & Examples
                     </span>
                   </li>
@@ -353,12 +353,12 @@ export default function HeroSearch() {
                                 {highlightText(result.title, query)}
                               </div>
                             </div>
-                            <div className="text-sm text-slate-600 dark:text-slate-400 text-left">
+                            <div className="text-sm text-slate-700 dark:text-slate-300 text-left">
                               {highlightText(result.description, query)}
                             </div>
                           </div>
                           <ArrowRight 
-                            className={`w-5 h-5 flex-shrink-0 text-slate-400 dark:text-slate-500 transition-opacity ${
+                            className={`w-5 h-5 flex-shrink-0 text-slate-500 dark:text-slate-400 transition-opacity ${
                               isFocused ? 'opacity-100' : 'opacity-0'
                             }`}
                             aria-hidden="true"
@@ -371,7 +371,7 @@ export default function HeroSearch() {
                 
                 {principles.length > 0 && (
                   <li className="px-4 py-2 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-200 dark:border-slate-700 border-b border-slate-200 dark:border-slate-700 text-left">
-                    <span className="text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-slate-700 dark:text-slate-200 uppercase tracking-wider">
                       Best Practices
                     </span>
                   </li>
@@ -400,12 +400,12 @@ export default function HeroSearch() {
                             <div className="text-slate-900 dark:text-white font-medium mb-1 text-left">
                               {highlightText(result.title, query)}
                             </div>
-                            <div className="text-sm text-slate-600 dark:text-slate-400 text-left">
+                            <div className="text-sm text-slate-700 dark:text-slate-300 text-left">
                               {highlightText(result.description, query)}
                             </div>
                           </div>
                           <ArrowRight 
-                            className={`w-5 h-5 flex-shrink-0 text-slate-400 dark:text-slate-500 transition-opacity ${
+                            className={`w-5 h-5 flex-shrink-0 text-slate-500 dark:text-slate-400 transition-opacity ${
                               isFocused ? 'opacity-100' : 'opacity-0'
                             }`}
                             aria-hidden="true"

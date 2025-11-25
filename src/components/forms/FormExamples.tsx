@@ -33,7 +33,7 @@ export function ExpertForm1() {
           className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
           aria-describedby="email-help"
         />
-        <p id="email-help" className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">
+        <p id="email-help" className="mt-1.5 text-sm text-slate-600 dark:text-slate-300">
           We'll never share your email
         </p>
       </div>
@@ -49,7 +49,7 @@ export function ExpertForm1() {
           className="w-full px-4 py-2.5 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all"
           aria-describedby="password-help"
         />
-        <p id="password-help" className="mt-1.5 text-sm text-slate-500 dark:text-slate-400">
+        <p id="password-help" className="mt-1.5 text-sm text-slate-600 dark:text-slate-300">
           Must be 8+ characters with numbers
         </p>
       </div>

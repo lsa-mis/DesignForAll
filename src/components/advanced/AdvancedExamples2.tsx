@@ -124,7 +124,7 @@ export function ExpertStepper() {
                   <div
                     className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-indigo-500 ${isComplete || isCurrent
                         ? 'bg-indigo-600 text-white'
-                        : 'bg-slate-300 dark:bg-slate-700 text-slate-600 dark:text-slate-400'
+                        : 'bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
                       }`}
                     aria-label={`${label}${isComplete ? ', completed' : isCurrent ? ', current step' : ''}`}
                   >
@@ -299,7 +299,7 @@ export function ExpertChart() {
           </div>
         ))}
       </div>
-      <figcaption className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+      <figcaption className="mt-2 text-sm text-slate-700 dark:text-slate-300">
         Quarterly performance: Q1 60%, Q2 80%, Q3 40%
       </figcaption>
     </figure>
@@ -366,7 +366,7 @@ export function ExpertMediaPlayer() {
               aria-label="Volume"
               className="w-20"
             />
-            <span className="text-xs text-slate-600 dark:text-slate-400">{volume}%</span>
+            <span className="text-xs text-slate-700 dark:text-slate-300">{volume}%</span>
           </div>
         </div>
       </div>
@@ -381,7 +381,7 @@ export function BeginnerChatWidget() {
       <button className="w-16 h-16 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg text-2xl flex items-center justify-center">
         💬
       </button>
-      <p className="text-xs mt-2 text-slate-600 dark:text-slate-400">Fixed positioning - no context</p>
+      <p className="text-xs mt-2 text-slate-700 dark:text-slate-300">Fixed positioning - no context</p>
     </div>
   );
 }
@@ -593,13 +593,13 @@ export function ExpertBreadcrumbEnhanced() {
             Home
           </a>
         </li>
-        <li aria-hidden="true" className="text-slate-500 dark:text-slate-400">/</li>
+        <li aria-hidden="true" className="text-slate-600 dark:text-slate-300">/</li>
         <li>
           <a href="/products" className="text-indigo-600 dark:text-indigo-400 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded">
             Products
           </a>
         </li>
-        <li aria-hidden="true" className="text-slate-500 dark:text-slate-400">/</li>
+        <li aria-hidden="true" className="text-slate-600 dark:text-slate-300">/</li>
         <li aria-current="page" className="text-slate-900 dark:text-slate-100 font-medium">
           Widget
         </li>

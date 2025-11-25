@@ -60,7 +60,7 @@ export default function Layout({ children }: LayoutProps) {
                 <h1 className="text-lg font-bold text-slate-900 dark:text-slate-100">
                   Design for All
                 </h1>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
+                <p className="text-xs text-slate-600 dark:text-slate-300">
                   UX Mastery
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function Layout({ children }: LayoutProps) {
                       <span className={`w-6 h-6 flex items-center justify-center text-xs font-semibold rounded ${
                         isActive 
                           ? 'bg-indigo-600 text-white dark:bg-indigo-600 dark:text-white' 
-                          : 'bg-slate-200 dark:bg-slate-700'
+                          : 'bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200'
                       }`}>
                         {section.number}
                       </span>

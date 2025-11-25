@@ -79,7 +79,7 @@ export function ExpertLink3() {
         download
         className="text-indigo-600 dark:text-indigo-400 underline underline-offset-2 hover:text-indigo-700 dark:hover:text-indigo-300"
       >
-        Annual Report <span className="text-sm text-slate-500 dark:text-slate-400">(PDF, 2.4 MB)</span>
+        Annual Report <span className="text-sm text-slate-600 dark:text-slate-300">(PDF, 2.4 MB)</span>
       </a>
     </div>
   );

@@ -85,7 +85,7 @@ export default function ComparisonCard({
       <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">
+            <span className="text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wide">
               {sectionNumber}
             </span>
             <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
@@ -96,7 +96,7 @@ export default function ComparisonCard({
           {/* Toggle Switch */}
           <div className="flex items-center gap-2">
             <span className={`text-sm font-medium transition-colors ${
-              !isProMode ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500 dark:text-slate-400'
+              !isProMode ? 'text-rose-600 dark:text-rose-400' : 'text-slate-600 dark:text-slate-300'
             }`}>
               Beginner
             </span>
@@ -116,14 +116,14 @@ export default function ComparisonCard({
               />
             </button>
             <span className={`text-sm font-medium transition-colors ${
-              isProMode ? 'text-purple-700 dark:text-purple-500' : 'text-slate-500 dark:text-slate-400'
+              isProMode ? 'text-purple-700 dark:text-purple-500' : 'text-slate-600 dark:text-slate-300'
             }`}>
               Expert
             </span>
           </div>
         </div>
         {description && (
-          <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          <p className="mt-2 text-sm text-slate-700 dark:text-slate-300">
             {description}
           </p>
         )}
