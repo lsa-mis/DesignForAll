@@ -224,8 +224,8 @@ export default function HeroSearch() {
   return (
     <div ref={containerRef} className="relative w-full max-w-2xl mx-auto">
       <div className="relative">
-        <div className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 dark:text-slate-300 pointer-events-none z-10">
-          <Search className="w-5 h-5" aria-hidden="true" />
+        <div className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-600 dark:text-slate-300 pointer-events-none z-10">
+          <Search className="w-6 h-6" aria-hidden="true" />
         </div>
         <input
           ref={inputRef}
@@ -239,7 +239,7 @@ export default function HeroSearch() {
             }
           }}
           placeholder="Search accessible components and patterns..."
-          className="w-full h-14 pl-12 pr-4 bg-white/90 dark:bg-slate-800/50 backdrop-blur-sm border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-white placeholder:text-slate-600 dark:placeholder:text-slate-300 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-purple-600 transition-all text-base shadow-sm dark:shadow-none"
+          className="w-full h-16 pl-14 pr-6 bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-600 rounded-xl text-slate-900 dark:text-white placeholder:text-slate-500 dark:placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 focus:border-indigo-600 dark:focus:border-indigo-500 transition-all text-lg shadow-lg dark:shadow-xl dark:shadow-slate-900/50 hover:border-slate-400 dark:hover:border-slate-500"
           aria-label="Search accessible components and patterns"
           aria-expanded={isOpen}
           aria-autocomplete="list"
