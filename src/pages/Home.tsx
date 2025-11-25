@@ -98,16 +98,16 @@ export default function Home() {
         className="bg-indigo-600 rounded-xl p-8 text-white"
       >
         <h2 className="text-2xl font-bold mb-4">Ready to Start?</h2>
-        <h3 className="text-xl font-bold mb-3">Modal Dialogs: Focus Management Mastery</h3>
+        <h3 className="text-xl font-bold mb-3">Forms: Where Accessibility Meets Design</h3>
         <p className="text-indigo-100 mb-6">
-          See how proper focus trapping, backdrop handling, and keyboard navigation transform a basic modal 
-          into an accessible, professional component. Compare Beginner vs Expert implementations side-by-side.
+          See how proper labels, error messages, and form structure create better user experiences. 
+          The difference between Beginner and Expert forms is immediately visible—and the code is simpler than you think.
         </p>
         <Link
-          to="/section/advanced#8.3"
+          to="/section/forms"
           className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-indigo-950 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-indigo-600"
         >
-          Explore Modal Dialogs
+          Explore Forms Section
           <ArrowRight className="w-5 h-5" />
         </Link>
       </motion.div>
