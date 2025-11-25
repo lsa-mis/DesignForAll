@@ -269,10 +269,10 @@ export function ExpertCardGrid() {
 // Chart/Graph - Bad
 export function BeginnerChart() {
   return (
-    <div className="flex items-end gap-2 h-32">
-      <div className="bg-blue-500 w-12" style={{ height: '60%' }}></div>
-      <div className="bg-blue-500 w-12" style={{ height: '80%' }}></div>
-      <div className="bg-blue-500 w-12" style={{ height: '40%' }}></div>
+    <div className="flex items-end gap-2 h-32 p-4 bg-slate-50 dark:bg-slate-800/50 rounded">
+      <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t" style={{ height: '60%' }}></div>
+      <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t" style={{ height: '80%' }}></div>
+      <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t" style={{ height: '40%' }}></div>
     </div>
   );
 }
