@@ -20,7 +20,7 @@ export default function Home() {
           Design for All
         </h1>
         <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
-          Transform accessibility constraints into design excellence. Learn how WCAG 2.2 principles 
+          Transform accessibility constraints into design excellence. Learn how WCAG 2.1 principles 
           create cleaner, more robust, and more beautiful user interfaces.
         </p>
         <motion.div
