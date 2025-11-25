@@ -286,16 +286,16 @@ export function ExpertChart() {
   ];
 
   return (
-    <figure>
+    <figure className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded">
       <div className="flex items-end gap-2 h-32" role="img" aria-label="Bar chart showing quarterly data">
         {data.map((item, i) => (
           <div key={i} className="flex flex-col items-center">
             <div
-              className="bg-indigo-600 w-12 rounded-t"
+              className="bg-indigo-600 dark:bg-indigo-500 w-12 rounded-t min-h-[20px]"
               style={{ height: `${item.value}%` }}
               aria-label={`${item.label}: ${item.value}%`}
             />
-            <span className="text-xs mt-1 text-slate-700 dark:text-slate-300">{item.label}</span>
+            <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">{item.label}</span>
           </div>
         ))}
       </div>
