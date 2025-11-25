@@ -22,7 +22,7 @@ if git remote get-url origin &>/dev/null; then
         git remote set-url origin "$repo_url"
     fi
 else
-    read -p "Enter your GitHub repository URL (e.g., https://github.com/rayraycodes/designforall.git): " repo_url
+    read -p "Enter your GitHub repository URL (e.g., https://github.com/lsa-mis/DesignForAll.git): " repo_url
     git remote add origin "$repo_url"
 fi
 

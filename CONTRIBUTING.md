@@ -28,8 +28,8 @@ By participating in this project, you agree to maintain a respectful and inclusi
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/designforall.git
-   cd designforall
+   git clone https://github.com/YOUR_USERNAME/DesignForAll.git
+   cd DesignForAll
    ```
 3. **Install dependencies**:
    ```bash
@@ -70,7 +70,7 @@ By participating in this project, you agree to maintain a respectful and inclusi
 ## 📁 Project Structure
 
 ```
-designforall/
+DesignForAll/
 ├── .github/
 │   └── workflows/
 │       └── deploy.yml          # GitHub Pages deployment

@@ -93,7 +93,7 @@ Routes are defined in `App.tsx` using React Router:
 - `/` - Home page
 - `/section/[section-name]` - Individual sections
 
-The `basename="/designforall"` is set for GitHub Pages deployment.
+The `basename="/DesignForAll"` is set for GitHub Pages deployment.
 
 ## Styling
 
@@ -160,7 +160,7 @@ Deployed to GitHub Pages via GitHub Actions:
 1. Push to `main` branch triggers workflow
 2. Build runs on Ubuntu
 3. Artifacts uploaded to GitHub Pages
-4. Site available at `/designforall/` path
+4. Site available at `https://lsa-mis.github.io/DesignForAll/`
 
 ## Design Decisions
 

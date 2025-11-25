@@ -1,6 +1,6 @@
 # Deployment Guide for Design for All
 
-This guide will help you deploy the Design for All application to GitHub Pages at `/designforall`.
+This guide will help you deploy the Design for All application to GitHub Pages.
 
 ## Prerequisites
 
@@ -40,7 +40,9 @@ The GitHub Actions workflow will automatically run when you push to `main`. To t
 
 Once deployment completes (usually 2-5 minutes), your site will be available at:
 
-**https://lsa-mis.github.io/DesignForAll/designforall/**
+**https://lsa-mis.github.io/DesignForAll/**
+
+Example section URL: **https://lsa-mis.github.io/DesignForAll/section/forms**
 
 **Note:** During deployment, GitHub may show a temporary preview URL (like `special-engine-*.pages.github.io`). This is normal. The final URL will be available in your repository's **Settings → Pages** once deployment completes. You can also find the final URL in the Actions workflow output under the deployment step.
 
@@ -52,8 +54,8 @@ Once deployment completes (usually 2-5 minutes), your site will be available at:
 - Verify Node.js version compatibility
 
 ### 404 errors on routes
-- Ensure `vite.config.ts` has `base: '/designforall/'`
-- Ensure `App.tsx` has `basename="/designforall"` in BrowserRouter
+- Ensure `vite.config.ts` has `base: '/DesignForAll/'`
+- Ensure `App.tsx` has `basename="/DesignForAll"` in BrowserRouter
 
 ### Site not updating
 - Clear browser cache
@@ -73,5 +75,5 @@ npm run build
 
 - The workflow deploys automatically on every push to `main`
 - GitHub Pages may take a few minutes to update after deployment
-- The site is served from the `/designforall/` subdirectory
+- The site is served from the repository root at `https://lsa-mis.github.io/DesignForAll/`
 

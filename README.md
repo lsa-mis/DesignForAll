@@ -6,7 +6,7 @@ An interactive learning platform that demonstrates how accessibility principles 
 
 ## 🚀 Live Site
 
-Visit the live site at: **https://lsa-mis.github.io/DesignForAll/designforall/**
+Visit the live site at: **https://lsa-mis.github.io/DesignForAll/**
 
 ## 📦 Deployment
 
@@ -99,7 +99,7 @@ We welcome contributions! Design for All is an open-source project, and we're ex
 ### Quick Start for Contributors
 
 1. Fork the repository
-2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/designforall.git`
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/DesignForAll.git`
 3. Install dependencies: `npm install`
 4. Create a branch: `git checkout -b feature/your-feature`
 5. Make your changes
