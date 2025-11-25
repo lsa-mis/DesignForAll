@@ -44,7 +44,7 @@ export default function Home() {
         </blockquote>
       </motion.div>
 
-      <div className="grid md:grid-cols-2 gap-6 mb-12">
+      <div className="grid md:grid-cols-3 gap-6 mb-12">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -57,6 +57,21 @@ export default function Home() {
           <p className="text-slate-600 dark:text-slate-400 mb-4">
             Toggle between "Beginner" and "Expert" implementations to see the difference. 
             Every example is a live, interactive component you can explore.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.35 }}
+          className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6"
+        >
+          <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3">
+            Code Comparison
+          </h2>
+          <p className="text-slate-600 dark:text-slate-400 mb-4">
+            View side-by-side code examples for each pattern. Compare Beginner vs Expert implementations 
+            with syntax-highlighted code to understand the technical differences.
           </p>
         </motion.div>
 
