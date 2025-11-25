@@ -6,7 +6,7 @@ An interactive learning platform that demonstrates how accessibility principles 
 
 ## 🚀 Live Site
 
-Visit the live site at: **https://rayraycodes.github.io/designforall/**
+Visit the live site at: **https://lsa-mis.github.io/DesignForAll/designforall/**
 
 ## 📦 Deployment
 
