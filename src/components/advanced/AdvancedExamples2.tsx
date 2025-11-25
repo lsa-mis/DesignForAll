@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 // Navigation Menu (Mega Menu) - Bad
-export function AmateurMegaMenu() {
+export function BeginnerMegaMenu() {
   const [open, setOpen] = useState(false);
   return (
     <nav>
@@ -26,7 +26,7 @@ export function AmateurMegaMenu() {
 }
 
 // Navigation Menu (Mega Menu) - Good
-export function ProMegaMenu() {
+export function ExpertMegaMenu() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -82,7 +82,7 @@ export function ProMegaMenu() {
 }
 
 // Stepper - Bad
-export function AmateurStepper() {
+export function BeginnerStepper() {
   const [step, setStep] = useState(1);
   return (
     <div>
@@ -105,7 +105,7 @@ export function AmateurStepper() {
 }
 
 // Stepper - Good
-export function ProStepper() {
+export function ExpertStepper() {
   const [step, setStep] = useState(1);
   const steps = ['Step 1', 'Step 2', 'Step 3'];
 
@@ -157,7 +157,7 @@ export function ProStepper() {
 }
 
 // Tooltip - Bad
-export function AmateurTooltip() {
+export function BeginnerTooltip() {
   return (
     <div className="relative group">
       <button className="px-4 py-2 bg-blue-500 text-white rounded">
@@ -171,7 +171,7 @@ export function AmateurTooltip() {
 }
 
 // Tooltip - Good
-export function ProTooltip() {
+export function ExpertTooltip() {
   const [show, setShow] = useState(false);
   const tooltipRef = useRef<HTMLDivElement>(null);
 
@@ -208,7 +208,7 @@ export function ProTooltip() {
 }
 
 // Card Grid with Keyboard Navigation - Bad
-export function AmateurCardGrid() {
+export function BeginnerCardGrid() {
   const cards = ['Card 1', 'Card 2', 'Card 3', 'Card 4'];
   return (
     <div className="grid grid-cols-2 gap-4">
@@ -226,7 +226,7 @@ export function AmateurCardGrid() {
 }
 
 // Card Grid with Keyboard Navigation - Good
-export function ProCardGrid() {
+export function ExpertCardGrid() {
   const cards = ['Card 1', 'Card 2', 'Card 3', 'Card 4'];
   const [focusedIndex, setFocusedIndex] = useState<number | null>(null);
 
@@ -267,7 +267,7 @@ export function ProCardGrid() {
 }
 
 // Chart/Graph - Bad
-export function AmateurChart() {
+export function BeginnerChart() {
   return (
     <div className="flex items-end gap-2 h-32">
       <div className="bg-blue-500 w-12" style={{ height: '60%' }}></div>
@@ -278,7 +278,7 @@ export function AmateurChart() {
 }
 
 // Chart/Graph - Good
-export function ProChart() {
+export function ExpertChart() {
   const data = [
     { label: 'Q1', value: 60 },
     { label: 'Q2', value: 80 },
@@ -307,7 +307,7 @@ export function ProChart() {
 }
 
 // Media Player - Bad
-export function AmateurMediaPlayer() {
+export function BeginnerMediaPlayer() {
   return (
     <div>
       <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded">
@@ -324,7 +324,7 @@ export function AmateurMediaPlayer() {
 }
 
 // Media Player - Good
-export function ProMediaPlayer() {
+export function ExpertMediaPlayer() {
   const [playing, setPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
 
@@ -375,7 +375,7 @@ export function ProMediaPlayer() {
 }
 
 // Chat Widget - Bad
-export function AmateurChatWidget() {
+export function BeginnerChatWidget() {
   return (
     <div className="relative inline-block">
       <button className="w-16 h-16 bg-blue-500 hover:bg-blue-600 text-white rounded-full shadow-lg text-2xl flex items-center justify-center">
@@ -387,7 +387,7 @@ export function AmateurChatWidget() {
 }
 
 // Chat Widget - Good
-export function ProChatWidget() {
+export function ExpertChatWidget() {
   const [open, setOpen] = useState(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -552,7 +552,7 @@ export function ProChatWidget() {
 }
 
 // Table for Layout - Bad
-export function AmateurLayoutTable() {
+export function BeginnerLayoutTable() {
   return (
     <table>
       <tr>
@@ -564,7 +564,7 @@ export function AmateurLayoutTable() {
 }
 
 // Table for Layout - Good (using CSS Grid)
-export function ProLayoutTable() {
+export function ExpertLayoutTable() {
   return (
     <div className="grid grid-cols-[200px_1fr] gap-4">
       <aside className="bg-slate-100 dark:bg-slate-800 p-4 rounded">
@@ -584,7 +584,7 @@ export function ProLayoutTable() {
 }
 
 // Breadcrumb - Enhanced
-export function ProBreadcrumbEnhanced() {
+export function ExpertBreadcrumbEnhanced() {
   return (
     <nav aria-label="Breadcrumb" className="mb-4">
       <ol className="flex items-center gap-2 text-sm">

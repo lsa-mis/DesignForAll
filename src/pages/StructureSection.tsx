@@ -1,17 +1,17 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurHeadings1,
-  ProHeadings1,
-  AmateurHeadings2,
-  ProHeadings2,
-  AmateurHeadings3,
-  ProHeadings3,
-  AmateurLandmarks,
-  ProLandmarks,
-  AmateurList,
-  ProList,
-  AmateurTable,
-  ProTable,
+  BeginnerHeadings1,
+  ExpertHeadings1,
+  BeginnerHeadings2,
+  ExpertHeadings2,
+  BeginnerHeadings3,
+  ExpertHeadings3,
+  BeginnerLandmarks,
+  ExpertLandmarks,
+  BeginnerList,
+  ExpertList,
+  BeginnerTable,
+  ExpertTable,
 } from '../components/structure/StructureExamples';
 
 const structureExamples = [
@@ -24,8 +24,8 @@ const structureExamples = [
     goodCode: `<h1 class="text-3xl font-bold">Page Title</h1>
 <h2 class="text-2xl font-semibold">Section</h2>
 <h3 class="text-xl font-medium">Subsection</h3>`,
-    BadComponent: AmateurHeadings1,
-    GoodComponent: ProHeadings1,
+    BadComponent: BeginnerHeadings1,
+    GoodComponent: ExpertHeadings1,
   },
   {
     title: 'Single H1 Per Page',
@@ -38,8 +38,8 @@ const structureExamples = [
 <header>
   <h2 class="text-2xl">Welcome Back</h2>
 </header>`,
-    BadComponent: AmateurHeadings2,
-    GoodComponent: ProHeadings2,
+    BadComponent: BeginnerHeadings2,
+    GoodComponent: ExpertHeadings2,
   },
   {
     title: 'Descriptive Headings',
@@ -49,8 +49,8 @@ const structureExamples = [
 <h2>Details About Your Purchase and What Happens Next</h2>`,
     goodCode: `<h2>Order Confirmation</h2>
 <h2>Shipping Address</h2>`,
-    BadComponent: AmateurHeadings3,
-    GoodComponent: ProHeadings3,
+    BadComponent: BeginnerHeadings3,
+    GoodComponent: ExpertHeadings3,
   },
   {
     title: 'Semantic Landmarks',
@@ -64,8 +64,8 @@ const structureExamples = [
 </header>
 <main id="main-content">...</main>
 <aside aria-label="Related links">...</aside>`,
-    BadComponent: AmateurLandmarks,
-    GoodComponent: ProLandmarks,
+    BadComponent: BeginnerLandmarks,
+    GoodComponent: ExpertLandmarks,
   },
   {
     title: 'Real Lists',
@@ -79,8 +79,8 @@ const structureExamples = [
   <li>First item</li>
   <li>Second item</li>
 </ul>`,
-    BadComponent: AmateurList,
-    GoodComponent: ProList,
+    BadComponent: BeginnerList,
+    GoodComponent: ExpertList,
   },
   {
     title: 'Semantic Tables',
@@ -98,8 +98,8 @@ const structureExamples = [
   </thead>
   <tbody>...</tbody>
 </table>`,
-    BadComponent: AmateurTable,
-    GoodComponent: ProTable,
+    BadComponent: BeginnerTable,
+    GoodComponent: ExpertTable,
   },
 ];
 

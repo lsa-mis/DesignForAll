@@ -14,7 +14,7 @@ The app will be available at `http://localhost:5173`
 
 ## 📁 Key Files
 
-- **`src/components/ComparisonCard.tsx`** - The core interactive component that toggles between Amateur/Pro modes
+- **`src/components/ComparisonCard.tsx`** - The core interactive component that toggles between Beginner/Expert modes
 - **`src/components/Layout.tsx`** - App shell with sidebar navigation and dark mode toggle
 - **`src/pages/FormsSection.tsx`** - Section 3 demonstration with 4 form examples
 - **`src/components/forms/FormExamples.tsx`** - All the Bad/Good form component implementations
@@ -22,7 +22,7 @@ The app will be available at `http://localhost:5173`
 ## 🎨 Features Implemented
 
 ✅ Interactive comparison cards with smooth animations  
-✅ Toggle between Amateur and Pro modes  
+✅ Toggle between Beginner and Expert modes  
 ✅ Code comparison view with syntax highlighting  
 ✅ Dark mode with system preference detection  
 ✅ Responsive sidebar navigation  

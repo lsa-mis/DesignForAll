@@ -1,45 +1,45 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurAccordion,
-  ProAccordion,
-  AmateurModal,
-  ProModal,
-  AmateurTabs,
-  ProTabs,
-  AmateurCarousel,
-  ProCarousel,
-  AmateurDropdown,
-  ProDropdown,
-  AmateurDataTable,
-  ProDataTable,
-  AmateurSearch,
-  ProSearch,
-  AmateurToggle,
-  ProToggle,
-  AmateurProgress,
-  ProProgress,
-  AmateurToast,
-  ProToast,
-  AmateurGallery,
-  ProGallery,
+  BeginnerAccordion,
+  ExpertAccordion,
+  BeginnerModal,
+  ExpertModal,
+  BeginnerTabs,
+  ExpertTabs,
+  BeginnerCarousel,
+  ExpertCarousel,
+  BeginnerDropdown,
+  ExpertDropdown,
+  BeginnerDataTable,
+  ExpertDataTable,
+  BeginnerSearch,
+  ExpertSearch,
+  BeginnerToggle,
+  ExpertToggle,
+  BeginnerProgress,
+  ExpertProgress,
+  BeginnerToast,
+  ExpertToast,
+  BeginnerGallery,
+  ExpertGallery,
 } from '../components/advanced/AdvancedExamples';
 import {
-  AmateurMegaMenu,
-  ProMegaMenu,
-  AmateurStepper,
-  ProStepper,
-  AmateurTooltip,
-  ProTooltip,
-  AmateurCardGrid,
-  ProCardGrid,
-  AmateurChart,
-  ProChart,
-  AmateurMediaPlayer,
-  ProMediaPlayer,
-  AmateurChatWidget,
-  ProChatWidget,
-  AmateurLayoutTable,
-  ProLayoutTable,
+  BeginnerMegaMenu,
+  ExpertMegaMenu,
+  BeginnerStepper,
+  ExpertStepper,
+  BeginnerTooltip,
+  ExpertTooltip,
+  BeginnerCardGrid,
+  ExpertCardGrid,
+  BeginnerChart,
+  ExpertChart,
+  BeginnerMediaPlayer,
+  ExpertMediaPlayer,
+  BeginnerChatWidget,
+  ExpertChatWidget,
+  BeginnerLayoutTable,
+  ExpertLayoutTable,
 } from '../components/advanced/AdvancedExamples2';
 
 const advancedExamples = [
@@ -88,8 +88,8 @@ const advancedExamples = [
   Section Title
 </button>
 <div id="accordion-content">...</div>`,
-    BadComponent: AmateurAccordion,
-    GoodComponent: ProAccordion,
+    BadComponent: BeginnerAccordion,
+    GoodComponent: ExpertAccordion,
   },
   {
     title: 'Modal Dialogs',
@@ -105,8 +105,8 @@ const advancedExamples = [
   <!-- Focus management -->
   <!-- Escape key handling -->
 </div>`,
-    BadComponent: AmateurModal,
-    GoodComponent: ProModal,
+    BadComponent: BeginnerModal,
+    GoodComponent: ExpertModal,
   },
   {
     title: 'Tab Interfaces',
@@ -120,8 +120,8 @@ const advancedExamples = [
   </button>
 </div>
 <div role="tabpanel">Content</div>`,
-    BadComponent: AmateurTabs,
-    GoodComponent: ProTabs,
+    BadComponent: BeginnerTabs,
+    GoodComponent: ExpertTabs,
   },
   {
     title: 'Carousels / Image Sliders',
@@ -136,8 +136,8 @@ const advancedExamples = [
   <button aria-label={paused ? 'Play' : 'Pause'}>⏸</button>
   <button aria-label="Next slide">→</button>
 </div>`,
-    BadComponent: AmateurCarousel,
-    GoodComponent: ProCarousel,
+    BadComponent: BeginnerCarousel,
+    GoodComponent: ExpertCarousel,
   },
   {
     title: 'Custom Dropdowns / Select Menus',
@@ -153,8 +153,8 @@ const advancedExamples = [
 <ul role="listbox">
   <li role="option">Option 1</li>
 </ul>`,
-    BadComponent: AmateurDropdown,
-    GoodComponent: ProDropdown,
+    BadComponent: BeginnerDropdown,
+    GoodComponent: ExpertDropdown,
   },
   {
     title: 'Data Tables (Sortable)',
@@ -175,8 +175,8 @@ const advancedExamples = [
     </tr>
   </thead>
 </table>`,
-    BadComponent: AmateurDataTable,
-    GoodComponent: ProDataTable,
+    BadComponent: BeginnerDataTable,
+    GoodComponent: ExpertDataTable,
   },
   {
     title: 'Search Autocomplete / Typeahead',
@@ -192,8 +192,8 @@ const advancedExamples = [
 <ul id="search-results" role="listbox">
   <li role="option">Result</li>
 </ul>`,
-    BadComponent: AmateurSearch,
-    GoodComponent: ProSearch,
+    BadComponent: BeginnerSearch,
+    GoodComponent: ExpertSearch,
   },
   {
     title: 'Custom Toggle Switches',
@@ -209,8 +209,8 @@ const advancedExamples = [
 >
   <span className="sr-only">Toggle {on ? 'on' : 'off'}</span>
 </button>`,
-    BadComponent: AmateurToggle,
-    GoodComponent: ProToggle,
+    BadComponent: BeginnerToggle,
+    GoodComponent: ExpertToggle,
   },
   {
     title: 'Navigation Menus (Mega Menus)',
@@ -232,8 +232,8 @@ const advancedExamples = [
     <a role="menuitem">Item</a>
   </div>
 </div>`,
-    BadComponent: AmateurMegaMenu,
-    GoodComponent: ProMegaMenu,
+    BadComponent: BeginnerMegaMenu,
+    GoodComponent: ExpertMegaMenu,
   },
   {
     title: 'Progress Bars / Steppers',
@@ -251,8 +251,8 @@ const advancedExamples = [
 >
   <div style={{ width: '60%' }} />
 </div>`,
-    BadComponent: AmateurProgress,
-    GoodComponent: ProProgress,
+    BadComponent: BeginnerProgress,
+    GoodComponent: ExpertProgress,
   },
   {
     title: 'Steppers / Multi-step Forms',
@@ -269,8 +269,8 @@ const advancedExamples = [
     </li>
   </ol>
 </nav>`,
-    BadComponent: AmateurStepper,
-    GoodComponent: ProStepper,
+    BadComponent: BeginnerStepper,
+    GoodComponent: ExpertStepper,
   },
   {
     title: 'Toast Notifications / Alerts',
@@ -287,8 +287,8 @@ const advancedExamples = [
   <button aria-label="Close">×</button>
   Notification message
 </div>`,
-    BadComponent: AmateurToast,
-    GoodComponent: ProToast,
+    BadComponent: BeginnerToast,
+    GoodComponent: ExpertToast,
   },
   {
     title: 'Image Galleries',
@@ -310,8 +310,8 @@ const advancedExamples = [
     </button>
   ))}
 </div>`,
-    BadComponent: AmateurGallery,
-    GoodComponent: ProGallery,
+    BadComponent: BeginnerGallery,
+    GoodComponent: ExpertGallery,
   },
   {
     title: 'Card Grids with Keyboard Navigation',
@@ -336,8 +336,8 @@ const advancedExamples = [
     </button>
   ))}
 </div>`,
-    BadComponent: AmateurCardGrid,
-    GoodComponent: ProCardGrid,
+    BadComponent: BeginnerCardGrid,
+    GoodComponent: ExpertCardGrid,
   },
   {
     title: 'Interactive Charts or Graphs',
@@ -352,8 +352,8 @@ const advancedExamples = [
   </div>
   <figcaption>Quarterly performance data</figcaption>
 </figure>`,
-    BadComponent: AmateurChart,
-    GoodComponent: ProChart,
+    BadComponent: BeginnerChart,
+    GoodComponent: ExpertChart,
   },
   {
     title: 'Media Players (Audio/Video)',
@@ -368,8 +368,8 @@ const advancedExamples = [
   <div role="slider" aria-label="Progress" />
   <input type="range" aria-label="Volume" />
 </div>`,
-    BadComponent: AmateurMediaPlayer,
-    GoodComponent: ProMediaPlayer,
+    BadComponent: BeginnerMediaPlayer,
+    GoodComponent: ExpertMediaPlayer,
   },
   {
     title: 'Chat Widgets / Floating Action Buttons',
@@ -390,8 +390,8 @@ const advancedExamples = [
     {/* Chat content */}
   </div>
 )}`,
-    BadComponent: AmateurChatWidget,
-    GoodComponent: ProChatWidget,
+    BadComponent: BeginnerChatWidget,
+    GoodComponent: ExpertChatWidget,
   },
   {
     title: 'Tooltips and Hover Cards',
@@ -413,8 +413,8 @@ const advancedExamples = [
 >
   Tooltip text
 </div>`,
-    BadComponent: AmateurTooltip,
-    GoodComponent: ProTooltip,
+    BadComponent: BeginnerTooltip,
+    GoodComponent: ExpertTooltip,
   },
   {
     title: 'Tables for Layout vs. Data',
@@ -430,8 +430,8 @@ const advancedExamples = [
   <aside>Sidebar</aside>
   <main>Main Content</main>
 </div>`,
-    BadComponent: AmateurLayoutTable,
-    GoodComponent: ProLayoutTable,
+    BadComponent: BeginnerLayoutTable,
+    GoodComponent: ExpertLayoutTable,
   },
 ];
 

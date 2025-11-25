@@ -120,7 +120,7 @@ export default {
 
         // Semantic aliases for the Comparison Cards
 
-        amateur: {
+        beginner: {
 
           bg: '#FDF2F2',    // Light Red background (rose-50)
 
@@ -130,7 +130,7 @@ export default {
 
         },
 
-        pro: {
+        expert: {
 
           bg: '#ffffff',    // Clean White background
 

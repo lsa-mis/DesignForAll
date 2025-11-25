@@ -104,7 +104,7 @@ DesignForAll/
 We welcome various types of contributions:
 
 - 🐛 **Bug fixes** - Fix issues or improve existing code
-- ✨ **New examples** - Add new "Amateur vs Pro" comparisons
+- ✨ **New examples** - Add new "Beginner vs Expert" comparisons
 - 📝 **Documentation** - Improve docs, add comments, fix typos
 - 🎨 **Design improvements** - Enhance UI/UX while maintaining accessibility
 - 🌐 **Internationalization** - Add translations or RTL support
@@ -119,8 +119,8 @@ To add a new comparison example:
    ```typescript
    // src/components/your-section/YourExample.tsx
    
-   // Amateur version
-   export function AmateurYourExample() {
+   // Beginner version
+   export function BeginnerYourExample() {
      return (
        <div>
          {/* Bad implementation */}
@@ -128,8 +128,8 @@ To add a new comparison example:
      );
    }
    
-   // Pro version
-   export function ProYourExample() {
+   // Expert version
+   export function ExpertYourExample() {
      return (
        <div>
          {/* Good implementation */}
@@ -141,25 +141,25 @@ To add a new comparison example:
 2. **Add to the section page**:
    ```typescript
    // src/pages/YourSection.tsx
-   import { AmateurYourExample, ProYourExample } from '../components/your-section/YourExample';
+   import { BeginnerYourExample, ExpertYourExample } from '../components/your-section/YourExample';
    
    const examples = [
      {
        title: 'Your Example Title',
        description: 'Brief description',
        designLogic: 'Explain why the pro version is better',
-       badCode: `// Amateur code example`,
-       goodCode: `// Pro code example`,
-       BadComponent: AmateurYourExample,
-       GoodComponent: ProYourExample,
+       badCode: `// Beginner code example`,
+       goodCode: `// Expert code example`,
+       BadComponent: BeginnerYourExample,
+       GoodComponent: ExpertYourExample,
        sectionNumber: 'X.Y',
      },
    ];
    ```
 
 3. **Follow the pattern**:
-   - Amateur version should demonstrate common mistakes
-   - Pro version should show best practices
+   - Beginner version should demonstrate common mistakes
+   - Expert version should show best practices
    - Include clear design logic explanation
    - Provide code examples for both
 

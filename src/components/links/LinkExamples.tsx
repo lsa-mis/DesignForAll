@@ -1,7 +1,7 @@
 // Section 4: Hyperlinks Examples
 
 // 4.1 Meaningful Link Text - Bad
-export function AmateurLink1() {
+export function BeginnerLink1() {
   return (
     <div className="space-y-3">
       <a href="/products" className="text-blue-600 dark:text-blue-400">Click here</a>
@@ -12,7 +12,7 @@ export function AmateurLink1() {
 }
 
 // 4.1 Meaningful Link Text - Good
-export function ProLink1() {
+export function ExpertLink1() {
   return (
     <div className="space-y-3">
       <a href="/products" className="text-indigo-600 dark:text-indigo-400 underline underline-offset-2 hover:text-indigo-700 dark:hover:text-indigo-300">
@@ -27,7 +27,7 @@ export function ProLink1() {
 }
 
 // 4.3 Visual Link Affordance - Bad
-export function AmateurLink2() {
+export function BeginnerLink2() {
   return (
     <div className="space-y-3">
       <a href="/about" className="text-slate-700 dark:text-slate-300 no-underline">
@@ -42,7 +42,7 @@ export function AmateurLink2() {
 }
 
 // 4.3 Visual Link Affordance - Good
-export function ProLink2() {
+export function ExpertLink2() {
   return (
     <div className="space-y-3">
       <a 
@@ -60,7 +60,7 @@ export function ProLink2() {
 }
 
 // 4.4 File Type & Size - Bad
-export function AmateurLink3() {
+export function BeginnerLink3() {
   return (
     <div>
       <a href="/report.pdf" className="text-blue-600 dark:text-blue-400 underline">
@@ -71,7 +71,7 @@ export function AmateurLink3() {
 }
 
 // 4.4 File Type & Size - Good
-export function ProLink3() {
+export function ExpertLink3() {
   return (
     <div>
       <a 
@@ -86,7 +86,7 @@ export function ProLink3() {
 }
 
 // 4.6 Context Change Warnings - Bad
-export function AmateurLink4() {
+export function BeginnerLink4() {
   return (
     <div>
       <a href="/external" target="_blank" className="text-blue-600 dark:text-blue-400 underline">
@@ -97,7 +97,7 @@ export function AmateurLink4() {
 }
 
 // 4.6 Context Change Warnings - Good
-export function ProLink4() {
+export function ExpertLink4() {
   return (
     <div>
       <a 

@@ -97,7 +97,7 @@ export default function ComparisonCard({
             <span className={`text-sm font-medium transition-colors ${
               !isProMode ? 'text-rose-600 dark:text-rose-400' : 'text-slate-500 dark:text-slate-400'
             }`}>
-              Amateur
+              Beginner
             </span>
             <button
               onClick={() => setIsProMode(!isProMode)}
@@ -106,7 +106,7 @@ export default function ComparisonCard({
                   ? 'bg-purple-600 focus:ring-purple-500'
                   : 'bg-rose-500 focus:ring-rose-500'
               }`}
-              aria-label={`Switch to ${isProMode ? 'amateur' : 'pro'} mode`}
+              aria-label={`Switch to ${isProMode ? 'beginner' : 'expert'} mode`}
             >
               <motion.div
                 className="absolute top-1 left-1 w-5 h-5 bg-white rounded-full shadow-lg"
@@ -117,7 +117,7 @@ export default function ComparisonCard({
             <span className={`text-sm font-medium transition-colors ${
               isProMode ? 'text-purple-700 dark:text-purple-500' : 'text-slate-500 dark:text-slate-400'
             }`}>
-              Pro
+              Expert
             </span>
           </div>
         </div>
@@ -136,29 +136,29 @@ export default function ComparisonCard({
       }`}>
         <AnimatePresence mode="wait">
           <motion.div
-            key={isProMode ? 'pro' : 'amateur'}
+            key={isProMode ? 'expert' : 'beginner'}
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.2 }}
             className={`${
               isProMode
-                ? 'bg-pro-bg dark:bg-slate-800 border-pro-border'
-                : 'bg-amateur-bg dark:bg-rose-950/40 border-amateur-border dark:border-rose-800'
+                ? 'bg-expert-bg dark:bg-slate-800 border-expert-border'
+                : 'bg-beginner-bg dark:bg-rose-950/40 border-beginner-border dark:border-rose-800'
             } rounded-lg border-2 p-6 transition-colors`}
           >
             {isProMode ? (
               <div className="flex items-start gap-2 mb-4">
                 <CheckCircle2 className="w-5 h-5 text-purple-700 dark:text-purple-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm font-medium text-purple-900 dark:text-purple-300">
-                  Pro Implementation
+                  Expert Implementation
                 </span>
               </div>
             ) : (
               <div className="flex items-start gap-2 mb-4">
                 <AlertCircle className="w-5 h-5 text-rose-700 dark:text-rose-400 flex-shrink-0 mt-0.5" />
                 <span className="text-sm font-medium text-rose-900 dark:text-rose-200">
-                  Amateur Mistake
+                  Beginner Mistake
                 </span>
               </div>
             )}
@@ -221,10 +221,10 @@ export default function ComparisonCard({
               aria-label="Code comparison"
             >
               <div className="grid md:grid-cols-2 gap-0 border-t border-slate-200 dark:border-slate-800">
-                <div className="border-r border-slate-200 dark:border-slate-800" role="region" aria-label="Amateur code example">
+                <div className="border-r border-slate-200 dark:border-slate-800" role="region" aria-label="Beginner code example">
                   <div className="px-4 py-2 bg-rose-50 dark:bg-rose-950/30 border-b border-slate-200 dark:border-slate-800">
                     <span className="text-xs font-semibold text-rose-700 dark:text-rose-400 uppercase">
-                      Amateur Code
+                      Beginner Code
                     </span>
                   </div>
                   <div className="bg-white dark:bg-slate-800">
@@ -242,16 +242,16 @@ export default function ComparisonCard({
                       }}
                       PreTag="pre"
                       CodeTag="code"
-                      aria-label="Amateur code example"
+                      aria-label="Beginner code example"
                     >
                       {badCode}
                     </SyntaxHighlighter>
                   </div>
                 </div>
-                <div role="region" aria-label="Pro code example">
+                <div role="region" aria-label="Expert code example">
                   <div className="px-4 py-2 bg-purple-50 dark:bg-purple-950/30 border-b border-slate-200 dark:border-slate-800">
                     <span className="text-xs font-semibold text-purple-800 dark:text-purple-400 uppercase">
-                      Pro Code
+                      Expert Code
                     </span>
                   </div>
                   <div className="bg-white dark:bg-slate-800">
@@ -269,7 +269,7 @@ export default function ComparisonCard({
                       }}
                       PreTag="pre"
                       CodeTag="code"
-                      aria-label="Pro code example"
+                      aria-label="Expert code example"
                     >
                       {goodCode}
                     </SyntaxHighlighter>

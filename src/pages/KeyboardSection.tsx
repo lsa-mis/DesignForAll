@@ -1,11 +1,11 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurKeyboard1,
-  ProKeyboard1,
-  AmateurKeyboard2,
-  ProKeyboard2,
-  AmateurKeyboard3,
-  ProKeyboard3,
+  BeginnerKeyboard1,
+  ExpertKeyboard1,
+  BeginnerKeyboard2,
+  ExpertKeyboard2,
+  BeginnerKeyboard3,
+  ExpertKeyboard3,
 } from '../components/keyboard/KeyboardExamples';
 
 const keyboardExamples = [
@@ -15,8 +15,8 @@ const keyboardExamples = [
     designLogic: 'Every interactive element must be keyboard-accessible. If it\'s not reachable by Tab, it\'s not truly accessible. This ensures feature parity across input methods.',
     badCode: `<div onclick="doSomething()">Click Me</div>`,
     goodCode: `<button onClick={handleClick}>Click Me</button>`,
-    BadComponent: AmateurKeyboard1,
-    GoodComponent: ProKeyboard1,
+    BadComponent: BeginnerKeyboard1,
+    GoodComponent: ExpertKeyboard1,
   },
   {
     title: 'Visible Focus Indicators',
@@ -27,8 +27,8 @@ const keyboardExamples = [
   outline: 3px solid var(--focus-color);
   outline-offset: 2px;
 }`,
-    BadComponent: AmateurKeyboard2,
-    GoodComponent: ProKeyboard2,
+    BadComponent: BeginnerKeyboard2,
+    GoodComponent: ExpertKeyboard2,
   },
   {
     title: 'Skip to Main Content',
@@ -41,8 +41,8 @@ const keyboardExamples = [
 </a>
 <nav>...</nav>
 <main id="main-content" tabindex="-1">...</main>`,
-    BadComponent: AmateurKeyboard3,
-    GoodComponent: ProKeyboard3,
+    BadComponent: BeginnerKeyboard3,
+    GoodComponent: ExpertKeyboard3,
   },
 ];
 

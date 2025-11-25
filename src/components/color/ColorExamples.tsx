@@ -1,7 +1,7 @@
 // Section 6: Color & Contrast Examples
 
 // 6.1 Text Contrast - Bad
-export function AmateurColor1() {
+export function BeginnerColor1() {
   return (
     <div className="bg-white dark:bg-slate-900 p-6 rounded border border-slate-200 dark:border-slate-800">
       <p className="text-gray-400 dark:text-slate-500 text-lg">
@@ -12,7 +12,7 @@ export function AmateurColor1() {
 }
 
 // 6.1 Text Contrast - Good
-export function ProColor1() {
+export function ExpertColor1() {
   return (
     <div className="bg-white dark:bg-slate-900 p-6 rounded border border-slate-200 dark:border-slate-800">
       <p className="text-slate-900 dark:text-slate-100 text-lg">
@@ -23,7 +23,7 @@ export function ProColor1() {
 }
 
 // 6.4 Meaning Beyond Color - Bad
-export function AmateurColor2() {
+export function BeginnerColor2() {
   return (
     <div className="space-y-3">
       <div className="p-3 bg-red-100 dark:bg-red-950/30 rounded text-red-800 dark:text-red-300">
@@ -41,7 +41,7 @@ export function AmateurColor2() {
 }
 
 // 6.4 Meaning Beyond Color - Good
-export function ProColor2() {
+export function ExpertColor2() {
   return (
     <div className="space-y-3">
       <div className="p-3 bg-rose-100 dark:bg-rose-950 rounded flex items-center gap-2">

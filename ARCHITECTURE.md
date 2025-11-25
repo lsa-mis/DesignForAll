@@ -4,7 +4,7 @@ This document explains the architecture and design decisions of Design for All.
 
 ## Overview
 
-Design for All is a React-based single-page application built with Vite, TypeScript, and Tailwind CSS. It demonstrates accessibility principles through interactive "Amateur vs Pro" comparisons.
+Design for All is a React-based single-page application built with Vite, TypeScript, and Tailwind CSS. It demonstrates accessibility principles through interactive "Beginner vs Expert" comparisons.
 
 ## Tech Stack
 
@@ -53,7 +53,7 @@ designforall/
 
 The core component that displays side-by-side comparisons. It includes:
 
-- Toggle between "Amateur" and "Pro" modes
+- Toggle between "Beginner" and "Expert" modes
 - Live component previews
 - Design logic explanations
 - Expandable code comparison
@@ -63,10 +63,10 @@ The core component that displays side-by-side comparisons. It includes:
 - `title` - Example title
 - `description` - Brief description
 - `designLogic` - Explanation of why the pro version is better
-- `badCode` - Amateur code example (string)
-- `goodCode` - Pro code example (string)
-- `BadComponent` - Amateur React component
-- `GoodComponent` - Pro React component
+- `badCode` - Beginner code example (string)
+- `goodCode` - Expert code example (string)
+- `BadComponent` - Beginner React component
+- `GoodComponent` - Expert React component
 - `sectionNumber` - Section identifier
 
 ### Layout
@@ -82,7 +82,7 @@ The app shell that provides:
 
 Each section page follows this pattern:
 
-1. Import example components (Amateur and Pro versions)
+1. Import example components (Beginner and Expert versions)
 2. Define example data array with metadata
 3. Map over examples to render ComparisonCard components
 

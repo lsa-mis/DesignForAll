@@ -14,7 +14,7 @@ See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions to Git
 
 ## Features
 
-- 🎨 **Interactive Comparison Cards** - Toggle between "Amateur" and "Pro" implementations
+- 🎨 **Interactive Comparison Cards** - Toggle between "Beginner" and "Expert" implementations
 - 💡 **Design Logic Explanations** - Understand the "why" behind each principle
 - 📱 **Responsive Design** - Works beautifully on all devices
 - 🌙 **Dark Mode** - Full dark mode support with system preference detection

@@ -1,13 +1,13 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurLink1,
-  ProLink1,
-  AmateurLink2,
-  ProLink2,
-  AmateurLink3,
-  ProLink3,
-  AmateurLink4,
-  ProLink4,
+  BeginnerLink1,
+  ExpertLink1,
+  BeginnerLink2,
+  ExpertLink2,
+  BeginnerLink3,
+  ExpertLink3,
+  BeginnerLink4,
+  ExpertLink4,
 } from '../components/links/LinkExamples';
 
 const linkExamples = [
@@ -19,8 +19,8 @@ const linkExamples = [
 <a href="/contact">Click here</a>`,
     goodCode: `<a href="/products">View our product catalog</a>
 <a href="/contact">Contact our support team</a>`,
-    BadComponent: AmateurLink1,
-    GoodComponent: ProLink1,
+    BadComponent: BeginnerLink1,
+    GoodComponent: ExpertLink1,
   },
   {
     title: 'Visual Link Affordance',
@@ -33,8 +33,8 @@ const linkExamples = [
   text-decoration: underline;
   text-underline-offset: 0.2em;
 }`,
-    BadComponent: AmateurLink2,
-    GoodComponent: ProLink2,
+    BadComponent: BeginnerLink2,
+    GoodComponent: ExpertLink2,
   },
   {
     title: 'File Type & Size Context',
@@ -44,8 +44,8 @@ const linkExamples = [
     goodCode: `<a href="/report.pdf" download>
   Annual Report <span class="text-sm">(PDF, 2.4 MB)</span>
 </a>`,
-    BadComponent: AmateurLink3,
-    GoodComponent: ProLink3,
+    BadComponent: BeginnerLink3,
+    GoodComponent: ExpertLink3,
   },
   {
     title: 'Context Change Warnings',
@@ -57,8 +57,8 @@ const linkExamples = [
   <span class="sr-only">(opens in new tab)</span>
   <span aria-hidden="true">↗</span>
 </a>`,
-    BadComponent: AmateurLink4,
-    GoodComponent: ProLink4,
+    BadComponent: BeginnerLink4,
+    GoodComponent: ExpertLink4,
   },
 ];
 

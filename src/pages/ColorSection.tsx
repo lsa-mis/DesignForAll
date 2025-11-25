@@ -1,9 +1,9 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurColor1,
-  ProColor1,
-  AmateurColor2,
-  ProColor2,
+  BeginnerColor1,
+  ExpertColor1,
+  BeginnerColor2,
+  ExpertColor2,
 } from '../components/color/ColorExamples';
 
 const colorExamples = [
@@ -23,8 +23,8 @@ body {
   color: var(--text-primary);
   background: var(--bg);
 }`,
-    BadComponent: AmateurColor1,
-    GoodComponent: ProColor1,
+    BadComponent: BeginnerColor1,
+    GoodComponent: ExpertColor1,
   },
   {
     title: 'Meaning Beyond Color',
@@ -44,8 +44,8 @@ body {
     <span class="label">Q1: 60%</span>
   </div>
 </div>`,
-    BadComponent: AmateurColor2,
-    GoodComponent: ProColor2,
+    BadComponent: BeginnerColor2,
+    GoodComponent: ExpertColor2,
   },
 ];
 

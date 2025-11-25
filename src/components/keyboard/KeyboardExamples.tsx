@@ -1,7 +1,7 @@
 // Section 5: Keyboard Navigation Examples
 
 // 5.2 All Elements Reachable - Bad
-export function AmateurKeyboard1() {
+export function BeginnerKeyboard1() {
   return (
     <div className="space-y-3">
       <div 
@@ -15,7 +15,7 @@ export function AmateurKeyboard1() {
 }
 
 // 5.2 All Elements Reachable - Good
-export function ProKeyboard1() {
+export function ExpertKeyboard1() {
   return (
     <div className="space-y-3">
       <button 
@@ -29,7 +29,7 @@ export function ProKeyboard1() {
 }
 
 // 5.6 Visible Focus Indicators - Bad
-export function AmateurKeyboard2() {
+export function BeginnerKeyboard2() {
   return (
     <div className="space-y-3">
       <button className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded outline-none">
@@ -43,7 +43,7 @@ export function AmateurKeyboard2() {
 }
 
 // 5.6 Visible Focus Indicators - Good
-export function ProKeyboard2() {
+export function ExpertKeyboard2() {
   return (
     <div className="space-y-3">
       <button className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-colors">
@@ -60,7 +60,7 @@ export function ProKeyboard2() {
 }
 
 // 5.4 Skip Link - Bad
-export function AmateurKeyboard3() {
+export function BeginnerKeyboard3() {
   return (
     <div>
       <nav className="p-4 bg-slate-200 dark:bg-slate-800 mb-4">
@@ -77,7 +77,7 @@ export function AmateurKeyboard3() {
 }
 
 // 5.4 Skip Link - Good
-export function ProKeyboard3() {
+export function ExpertKeyboard3() {
   return (
     <div>
       <a 

@@ -1,5 +1,5 @@
-// Amateur Form Component - Bad Examples
-export function AmateurForm1() {
+// Beginner Form Component - Bad Examples
+export function BeginnerForm1() {
   return (
     <div className="space-y-4">
       <input
@@ -19,8 +19,8 @@ export function AmateurForm1() {
   );
 }
 
-// Pro Form Component - Good Examples
-export function ProForm1() {
+// Expert Form Component - Good Examples
+export function ExpertForm1() {
   return (
     <div className="space-y-5">
       <div>
@@ -61,7 +61,7 @@ export function ProForm1() {
 }
 
 // Amateur Form Component - Placeholder Only
-export function AmateurForm2() {
+export function BeginnerForm2() {
   return (
     <div className="space-y-4">
       <input
@@ -79,7 +79,7 @@ export function AmateurForm2() {
 }
 
 // Pro Form Component - Persistent Labels
-export function ProForm2() {
+export function ExpertForm2() {
   return (
     <div className="space-y-5">
       <div>
@@ -107,7 +107,7 @@ export function ProForm2() {
 }
 
 // Amateur Form Component - No Error Messages
-export function AmateurForm3() {
+export function BeginnerForm3() {
   return (
     <div className="space-y-4">
       <input
@@ -123,7 +123,7 @@ export function AmateurForm3() {
 }
 
 // Pro Form Component - Text-Based Errors
-export function ProForm3() {
+export function ExpertForm3() {
   return (
     <div className="space-y-5">
       <div>
@@ -152,7 +152,7 @@ export function ProForm3() {
 }
 
 // Amateur Form Component - No Fieldset Grouping
-export function AmateurForm4() {
+export function BeginnerForm4() {
   return (
     <div className="space-y-4">
       <p className="font-semibold">Shipping Method</p>
@@ -169,7 +169,7 @@ export function AmateurForm4() {
 }
 
 // Pro Form Component - Fieldset Grouping
-export function ProForm4() {
+export function ExpertForm4() {
   return (
     <fieldset className="space-y-3 p-4 border border-slate-300 dark:border-slate-600 rounded-lg">
       <legend className="px-2 text-base font-semibold text-slate-900 dark:text-slate-100">

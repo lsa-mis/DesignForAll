@@ -10,10 +10,10 @@
 *"Accessibility is not a checklist. It is a constraint that forces better, cleaner, and more robust UI design."*
 
 ## Full Description
-Design for All is an interactive educational platform that showcases how WCAG 2.2 accessibility principles don't just make interfaces accessible—they create cleaner, more robust, and more beautiful user experiences. Through side-by-side comparisons of "Amateur" vs "Pro" implementations, users learn how accessibility constraints lead to better visual hierarchy, reduced cognitive load, and improved affordance.
+Design for All is an interactive educational platform that showcases how WCAG 2.2 accessibility principles don't just make interfaces accessible—they create cleaner, more robust, and more beautiful user experiences. Through side-by-side comparisons of "Beginner" vs "Expert" implementations, users learn how accessibility constraints lead to better visual hierarchy, reduced cognitive load, and improved affordance.
 
 ## Key Features
-- 🎨 Interactive comparison cards (Amateur vs Pro)
+- 🎨 Interactive comparison cards (Beginner vs Expert)
 - 💡 Design logic explanations
 - 📱 Fully responsive design
 - 🌙 Dark mode support
@@ -21,7 +21,7 @@ Design for All is an interactive educational platform that showcases how WCAG 2.
 - 🎭 Smooth animations
 
 ## Use Cases
-- **Developers** learning accessibility best practices
+- **Programmers** learning accessibility best practices
 - **Designers** understanding how constraints improve design
 - **Educators** teaching inclusive design principles
 - **Teams** building accessible products

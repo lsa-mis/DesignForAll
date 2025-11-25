@@ -1,13 +1,13 @@
 import ComparisonCard from '../components/ComparisonCard';
 import {
-  AmateurForm1,
-  ProForm1,
-  AmateurForm2,
-  ProForm2,
-  AmateurForm3,
-  ProForm3,
-  AmateurForm4,
-  ProForm4,
+  BeginnerForm1,
+  ExpertForm1,
+  BeginnerForm2,
+  ExpertForm2,
+  BeginnerForm3,
+  ExpertForm3,
+  BeginnerForm4,
+  ExpertForm4,
 } from '../components/forms/FormExamples';
 
 const formExamples = [
@@ -32,8 +32,8 @@ const formExamples = [
 <p id="email-help" className="mt-1.5 text-sm text-slate-500">
   We'll never share your email
 </p>`,
-    BadComponent: AmateurForm1,
-    GoodComponent: ProForm1,
+    BadComponent: BeginnerForm1,
+    GoodComponent: ExpertForm1,
   },
   {
     title: 'Persistent Labels',
@@ -52,8 +52,8 @@ const formExamples = [
   type="email"
   className="w-full px-4 py-2.5 border border-slate-300 rounded-lg"
 />`,
-    BadComponent: AmateurForm2,
-    GoodComponent: ProForm2,
+    BadComponent: BeginnerForm2,
+    GoodComponent: ExpertForm2,
   },
   {
     title: 'Text-Based Error Messages',
@@ -80,8 +80,8 @@ const formExamples = [
     Email field: Invalid format. Please enter an email like name@example.com
   </p>
 </div>`,
-    BadComponent: AmateurForm3,
-    GoodComponent: ProForm3,
+    BadComponent: BeginnerForm3,
+    GoodComponent: ExpertForm3,
   },
   {
     title: 'Fieldset Grouping',
@@ -119,8 +119,8 @@ const formExamples = [
     <span>Express (1-2 business days)</span>
   </label>
 </fieldset>`,
-    BadComponent: AmateurForm4,
-    GoodComponent: ProForm4,
+    BadComponent: BeginnerForm4,
+    GoodComponent: ExpertForm4,
   },
 ];
 

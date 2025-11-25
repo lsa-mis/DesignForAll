@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 
 // Accordions / Disclosure widgets - Bad
-export function AmateurAccordion() {
+export function BeginnerAccordion() {
   const [open, setOpen] = useState(false);
   return (
     <div className="border border-slate-300 dark:border-slate-700 rounded">
@@ -24,7 +24,7 @@ export function AmateurAccordion() {
 }
 
 // Accordions / Disclosure widgets - Good
-export function ProAccordion() {
+export function ExpertAccordion() {
   const [open, setOpen] = useState(false);
   return (
     <div className="border border-slate-300 dark:border-slate-700 rounded">
@@ -47,7 +47,7 @@ export function ProAccordion() {
 }
 
 // Modal dialogs - Bad
-export function AmateurModal() {
+export function BeginnerModal() {
   const [open, setOpen] = useState(false);
   return (
     <div className="relative">
@@ -71,7 +71,7 @@ export function AmateurModal() {
 }
 
 // Modal dialogs - Good
-export function ProModal() {
+export function ExpertModal() {
   const [open, setOpen] = useState(false);
   const modalRef = useRef<HTMLDivElement>(null);
   
@@ -127,7 +127,7 @@ export function ProModal() {
 }
 
 // Tabs - Bad
-export function AmateurTabs() {
+export function BeginnerTabs() {
   const [active, setActive] = useState(0);
   return (
     <div>
@@ -154,7 +154,7 @@ export function AmateurTabs() {
 }
 
 // Tabs - Good
-export function ProTabs() {
+export function ExpertTabs() {
   const [active, setActive] = useState(0);
   const tabs = ['Tab 1', 'Tab 2', 'Tab 3'];
   
@@ -196,7 +196,7 @@ export function ProTabs() {
 }
 
 // Carousel - Bad
-export function AmateurCarousel() {
+export function BeginnerCarousel() {
   const [index, setIndex] = useState(0);
   const items = [
     { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop', alt: '' },
@@ -226,7 +226,7 @@ export function AmateurCarousel() {
 }
 
 // Carousel - Good
-export function ProCarousel() {
+export function ExpertCarousel() {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const items = [
@@ -300,7 +300,7 @@ export function ProCarousel() {
 }
 
 // Custom Dropdown - Bad
-export function AmateurDropdown() {
+export function BeginnerDropdown() {
   const [open, setOpen] = useState(false);
   const options = ['Option 1', 'Option 2', 'Option 3'];
   
@@ -332,7 +332,7 @@ export function AmateurDropdown() {
 }
 
 // Custom Dropdown - Good
-export function ProDropdown() {
+export function ExpertDropdown() {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState('Select option');
   const options = ['Option 1', 'Option 2', 'Option 3'];
@@ -403,7 +403,7 @@ export function ProDropdown() {
 }
 
 // Data Table - Bad
-export function AmateurDataTable() {
+export function BeginnerDataTable() {
   const data = [
     { name: 'John', age: 30, city: 'NYC' },
     { name: 'Jane', age: 25, city: 'LA' },
@@ -428,7 +428,7 @@ export function AmateurDataTable() {
 }
 
 // Data Table - Good
-export function ProDataTable() {
+export function ExpertDataTable() {
   const [sortBy, setSortBy] = useState<string | null>(null);
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
   const data = [
@@ -493,7 +493,7 @@ export function ProDataTable() {
 }
 
 // Search Autocomplete - Bad
-export function AmateurSearch() {
+export function BeginnerSearch() {
   const [query, setQuery] = useState('');
   const results = ['Result 1', 'Result 2', 'Result 3'].filter(r => 
     r.toLowerCase().includes(query.toLowerCase())
@@ -522,7 +522,7 @@ export function AmateurSearch() {
 }
 
 // Search Autocomplete - Good
-export function ProSearch() {
+export function ExpertSearch() {
   const [query, setQuery] = useState('');
   const [selected, setSelected] = useState(-1);
   const results = ['Result 1', 'Result 2', 'Result 3'].filter(r => 
@@ -591,7 +591,7 @@ export function ProSearch() {
 }
 
 // Toggle Switch - Bad
-export function AmateurToggle() {
+export function BeginnerToggle() {
   const [on, setOn] = useState(false);
   return (
     <div 
@@ -608,7 +608,7 @@ export function AmateurToggle() {
 }
 
 // Toggle Switch - Good
-export function ProToggle() {
+export function ExpertToggle() {
   const [on, setOn] = useState(false);
   return (
     <button
@@ -628,7 +628,7 @@ export function ProToggle() {
 }
 
 // Progress Bar - Bad
-export function AmateurProgress() {
+export function BeginnerProgress() {
   return (
     <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
       <div className="bg-blue-500 h-2 rounded-full" style={{ width: '60%' }}></div>
@@ -637,7 +637,7 @@ export function AmateurProgress() {
 }
 
 // Progress Bar - Good
-export function ProProgress() {
+export function ExpertProgress() {
   const progress = 60;
   return (
     <div>
@@ -662,7 +662,7 @@ export function ProProgress() {
 }
 
 // Toast Notification - Bad
-export function AmateurToast() {
+export function BeginnerToast() {
   return (
     <div className="relative">
       <div className="bg-blue-500 text-white p-4 rounded shadow-lg max-w-sm">
@@ -674,7 +674,7 @@ export function AmateurToast() {
 }
 
 // Toast Notification - Good
-export function ProToast() {
+export function ExpertToast() {
   return (
     <div className="relative">
       <div
@@ -699,7 +699,7 @@ export function ProToast() {
 }
 
 // Image Gallery - Bad
-export function AmateurGallery() {
+export function BeginnerGallery() {
   const images = [
     { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop', alt: '' },
     { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop', alt: '' },
@@ -728,7 +728,7 @@ export function AmateurGallery() {
 }
 
 // Image Gallery - Good
-export function ProGallery() {
+export function ExpertGallery() {
   const images = [
     { src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop', alt: 'Mountain landscape with lake reflection at sunset' },
     { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=300&fit=crop', alt: 'Ocean waves crashing on rocky shore' },

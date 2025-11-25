@@ -1,7 +1,7 @@
 // Section 1: Structure & Semantics Examples
 
 // 1.1 Sequential Headings - Bad
-export function AmateurHeadings1() {
+export function BeginnerHeadings1() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-bold text-slate-900 dark:text-slate-100">Page Title</h1>
@@ -12,7 +12,7 @@ export function AmateurHeadings1() {
 }
 
 // 1.1 Sequential Headings - Good
-export function ProHeadings1() {
+export function ExpertHeadings1() {
   return (
     <div className="space-y-4">
       <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">Page Title</h1>
@@ -24,7 +24,7 @@ export function ProHeadings1() {
 }
 
 // 1.2 Single H1 - Bad
-export function AmateurHeadings2() {
+export function BeginnerHeadings2() {
   return (
     <div className="space-y-4">
       <h1 className="text-xl text-slate-900 dark:text-slate-100">Site Logo</h1>
@@ -35,7 +35,7 @@ export function AmateurHeadings2() {
 }
 
 // 1.2 Single H1 - Good
-export function ProHeadings2() {
+export function ExpertHeadings2() {
   return (
     <div className="space-y-4">
       <header>
@@ -47,7 +47,7 @@ export function ProHeadings2() {
 }
 
 // 1.3 Descriptive Headings - Bad
-export function AmateurHeadings3() {
+export function BeginnerHeadings3() {
   return (
     <div className="space-y-4">
       <h2 className="text-xl text-slate-900 dark:text-slate-100">Information</h2>
@@ -57,7 +57,7 @@ export function AmateurHeadings3() {
 }
 
 // 1.3 Descriptive Headings - Good
-export function ProHeadings3() {
+export function ExpertHeadings3() {
   return (
     <div className="space-y-4">
       <h2 className="text-2xl font-semibold text-slate-900 dark:text-slate-100">Order Confirmation</h2>
@@ -67,7 +67,7 @@ export function ProHeadings3() {
 }
 
 // 1.6 Semantic Landmarks - Bad
-export function AmateurLandmarks() {
+export function BeginnerLandmarks() {
   return (
     <div>
       <div className="border border-slate-300 dark:border-slate-700 p-4 mb-4 text-slate-900 dark:text-slate-100">Header Content</div>
@@ -78,7 +78,7 @@ export function AmateurLandmarks() {
 }
 
 // 1.6 Semantic Landmarks - Good
-export function ProLandmarks() {
+export function ExpertLandmarks() {
   return (
     <div>
       <header className="border border-slate-300 dark:border-slate-700 p-4 mb-4 rounded-lg">
@@ -97,7 +97,7 @@ export function ProLandmarks() {
 }
 
 // 1.7 Real Lists - Bad
-export function AmateurList() {
+export function BeginnerList() {
   return (
     <div className="space-y-2">
       <div className="flex items-center gap-2">
@@ -113,7 +113,7 @@ export function AmateurList() {
 }
 
 // 1.7 Real Lists - Good
-export function ProList() {
+export function ExpertList() {
   return (
     <ul className="space-y-2 list-disc list-inside text-slate-700 dark:text-slate-300">
       <li>First item</li>
@@ -124,7 +124,7 @@ export function ProList() {
 }
 
 // 1.8 Semantic Tables - Bad
-export function AmateurTable() {
+export function BeginnerTable() {
   return (
     <div className="border border-slate-300 dark:border-slate-700 rounded">
       <div className="flex border-b border-slate-300 dark:border-slate-700">
@@ -140,7 +140,7 @@ export function AmateurTable() {
 }
 
 // 1.8 Semantic Tables - Good
-export function ProTable() {
+export function ExpertTable() {
   return (
     <table className="w-full border border-slate-300 dark:border-slate-700 rounded-lg overflow-hidden">
       <caption className="text-left font-semibold mb-2 text-slate-900 dark:text-slate-100">

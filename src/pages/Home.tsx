@@ -47,7 +47,7 @@ export default function Home() {
             Interactive Learning
           </h2>
           <p className="text-slate-600 dark:text-slate-400 mb-4">
-            Toggle between "Amateur" and "Pro" implementations to see the difference. 
+            Toggle between "Beginner" and "Expert" implementations to see the difference. 
             Every example is a live, interactive component you can explore.
           </p>
         </motion.div>
