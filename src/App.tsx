@@ -16,7 +16,7 @@ import AdvancedComponentsSection from './pages/AdvancedComponentsSection';
 
 function App() {
   return (
-    <BrowserRouter basename="/DesignForAll/designforall">
+    <BrowserRouter basename="/DesignForAll">
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
