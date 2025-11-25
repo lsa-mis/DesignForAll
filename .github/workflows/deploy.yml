@@ -39,10 +39,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Prepare deployment
+        run: |
+          mkdir -p deploy/designforall
+          cp -r dist/* deploy/designforall/
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './deploy'
 
   deploy:
     environment:
