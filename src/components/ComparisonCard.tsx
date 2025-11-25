@@ -75,10 +75,11 @@ export default function ComparisonCard({
 
   return (
     <motion.div
+      id={sectionNumber}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden"
+      className="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden scroll-mt-24"
     >
       {/* Header */}
       <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/50">
@@ -228,24 +229,24 @@ export default function ComparisonCard({
                     </span>
                   </div>
                   <div className="bg-white dark:bg-slate-800">
-                    <SyntaxHighlighter
-                      language="tsx"
+                  <SyntaxHighlighter
+                    language="tsx"
                       style={typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? accessibleDarkTheme : oneLight}
-                      customStyle={{
-                        margin: 0,
-                        borderRadius: 0,
-                        fontSize: '0.875rem',
-                        padding: '1rem',
+                    customStyle={{
+                      margin: 0,
+                      borderRadius: 0,
+                      fontSize: '0.875rem',
+                      padding: '1rem',
                         background: typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? '#1E293B' : '#FFFFFF',
                         color: typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? '#E5E7EB' : '#1F2937',
                         lineHeight: '1.6',
-                      }}
+                    }}
                       PreTag="pre"
                       CodeTag="code"
                       aria-label="Beginner code example"
-                    >
-                      {badCode}
-                    </SyntaxHighlighter>
+                  >
+                    {badCode}
+                  </SyntaxHighlighter>
                   </div>
                 </div>
                 <div role="region" aria-label="Expert code example">
@@ -255,24 +256,24 @@ export default function ComparisonCard({
                     </span>
                   </div>
                   <div className="bg-white dark:bg-slate-800">
-                    <SyntaxHighlighter
-                      language="tsx"
+                  <SyntaxHighlighter
+                    language="tsx"
                       style={typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? accessibleDarkTheme : oneLight}
-                      customStyle={{
-                        margin: 0,
-                        borderRadius: 0,
-                        fontSize: '0.875rem',
-                        padding: '1rem',
+                    customStyle={{
+                      margin: 0,
+                      borderRadius: 0,
+                      fontSize: '0.875rem',
+                      padding: '1rem',
                         background: typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? '#1E293B' : '#FFFFFF',
                         color: typeof window !== 'undefined' && document.documentElement.classList.contains('dark') ? '#E5E7EB' : '#1F2937',
                         lineHeight: '1.6',
-                      }}
+                    }}
                       PreTag="pre"
                       CodeTag="code"
                       aria-label="Expert code example"
-                    >
-                      {goodCode}
-                    </SyntaxHighlighter>
+                  >
+                    {goodCode}
+                  </SyntaxHighlighter>
                   </div>
                 </div>
               </div>

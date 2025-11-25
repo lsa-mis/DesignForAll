@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ComparisonCard from '../components/ComparisonCard';
 import {
   BeginnerHeadings1,
@@ -104,6 +106,22 @@ const structureExamples = [
 ];
 
 export default function StructureSection() {
+  const location = useLocation();
+
+  // Scroll to section when hash is present in URL
+  useEffect(() => {
+    if (location.hash) {
+      const elementId = location.hash.substring(1); // Remove the '#'
+      const element = document.getElementById(elementId);
+      if (element) {
+        // Small delay to ensure DOM is ready
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
+
   return (
     <div className="space-y-8">
       <div className="mb-8">

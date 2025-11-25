@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ComparisonCard from '../components/ComparisonCard';
 import {
   BeginnerAccordion,
@@ -436,6 +438,20 @@ const advancedExamples = [
 ];
 
 export default function AdvancedComponentsSection() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const elementId = location.hash.substring(1);
+      const element = document.getElementById(elementId);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, [location.hash]);
+
   return (
     <div className="space-y-8">
       <div className="mb-8">

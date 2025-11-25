@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
+import HeroSearch from '../components/HeroSearch';
 
 export default function Home() {
   return (
@@ -18,10 +19,17 @@ export default function Home() {
         <h1 className="text-5xl md:text-6xl font-bold text-slate-900 dark:text-slate-100 mb-6">
           Design for All
         </h1>
-        <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
           Transform accessibility constraints into design excellence. Learn how WCAG 2.2 principles 
           create cleaner, more robust, and more beautiful user interfaces.
         </p>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+        >
+          <HeroSearch />
+        </motion.div>
       </motion.div>
 
       <motion.div
@@ -75,15 +83,16 @@ export default function Home() {
         className="bg-indigo-600 rounded-xl p-8 text-white"
       >
         <h2 className="text-2xl font-bold mb-4">Ready to Start?</h2>
+        <h3 className="text-xl font-bold mb-3">Anatomy of an Unbreakable Component</h3>
         <p className="text-indigo-100 mb-6">
-          Begin with Section 3: Forms, Inputs, and Errors—the most visually convincing demonstration 
-          of how accessibility creates better design.
+          Move beyond basic styling. Learn how to architect components that manage their own focus states, 
+          announce changes to the DOM, and handle edge cases without breaking the layout.
         </p>
         <Link
-          to="/section/forms"
+          to="/section/advanced"
           className="inline-flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-indigo-950 font-semibold rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-indigo-600"
         >
-          Explore Forms Section
+          Deconstruct Components
           <ArrowRight className="w-5 h-5" />
         </Link>
       </motion.div>
