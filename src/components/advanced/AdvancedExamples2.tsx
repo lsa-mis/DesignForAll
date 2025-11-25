@@ -268,21 +268,24 @@ export function ExpertCardGrid() {
 
 // Chart/Graph - Bad
 export function BeginnerChart() {
+  const data = [
+    { label: 'Q1', value: 60 },
+    { label: 'Q2', value: 80 },
+    { label: 'Q3', value: 40 },
+  ];
+
   return (
     <figure className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded">
       <div className="flex items-end gap-2 h-32" role="img" aria-label="Bar chart showing quarterly data">
-        <div className="flex flex-col items-center">
-          <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t min-h-[20px]" style={{ height: '60%' }}></div>
-          <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">Q1</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t min-h-[20px]" style={{ height: '80%' }}></div>
-          <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">Q2</span>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t min-h-[20px]" style={{ height: '40%' }}></div>
-          <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">Q3</span>
-        </div>
+        {data.map((item, i) => (
+          <div key={i} className="flex flex-col items-center">
+            <div
+              className="bg-blue-500 dark:bg-blue-600 w-12 rounded-t"
+              style={{ height: `${item.value}%`, minHeight: '20px' }}
+            />
+            <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">{item.label}</span>
+          </div>
+        ))}
       </div>
     </figure>
   );
@@ -302,8 +305,8 @@ export function ExpertChart() {
         {data.map((item, i) => (
           <div key={i} className="flex flex-col items-center">
             <div
-              className="bg-indigo-600 dark:bg-indigo-500 w-12 rounded-t min-h-[20px]"
-              style={{ height: `${item.value}%` }}
+              className="bg-indigo-600 dark:bg-indigo-500 w-12 rounded-t"
+              style={{ height: `${item.value}%`, minHeight: '20px' }}
               aria-label={`${item.label}: ${item.value}%`}
             />
             <span className="text-xs mt-1 text-slate-700 dark:text-slate-300 font-medium">{item.label}</span>
